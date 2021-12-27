@@ -50,25 +50,25 @@
               <div class="row">
                   <div class="col-12 col-md-6">
                       <div class="form-container">
-                            <form class="form_block">
+                            <form class="form_block" id="contactusform" name="contactusform">
                           <div class="form-group">
-                              <label class="form-label" for="name">Name</label>
-                              <input class="form-control" type="text" placeholder="Leslie Alexander" name="name">
+                              <label class="form-label" for="name">Name *</label>
+                              <input class="form-control" type="text" placeholder="Leslie Alexander" name="contact_yourname" id="contact_yourname">
                           </div>
                   
                           <div class="form-group">
-                              <label class="form-label" for="number">Contact Number</label>
-                              <input class="form-control" type="number" placeholder="99808 78654" name="number">
+                              <label class="form-label" for="number">Contact Number *</label>
+                              <input class="form-control" type="number" placeholder="99808 78654" name="contact_mobilenumber" id="contact_mobilenumber">
                           </div>
                   
                           <div class="form-group">
-                              <label class="form-label" for="email">Email</label>
-                              <input class="form-control" type="text" placeholder="example@mail.com" name="email">
+                              <label class="form-label" for="email">Email Address *</label>
+                              <input class="form-control" type="text" placeholder="example@mail.com" name="contact_emailaddress" id="contact_emailaddress">
                           </div>
                   
                         <div class="form-group">
-                            <label class="form-label" for="description">Description</label>
-                            <textarea class="form-control" placeholder="Your description" name="description"></textarea>
+                            <label class="form-label" for="description">Description *</label>
+                            <textarea class="form-control" placeholder="Your description" name="contact_description" id="contact_description"></textarea>
                         </div>
                   
                           <button type="submit" class="cform-btn">
@@ -97,6 +97,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/pages/contactus.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- javascript -->
     
