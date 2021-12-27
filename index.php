@@ -18,21 +18,6 @@
 <body>
     <header>
     <?php include('./include/navigation.php');?>
-
-    <button class="ani-b">
-                    <span> For Enquire<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8"
-                        xml:space="preserve">
-                        <g>
-                                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
-                                        x1="0" y1="12.9" x2="34" y2="12.9"></line>
-                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3"
-                                        stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   ">
-                                    </polyline>
-                                </g>
-                            </svg></span>
-                    </button>
     </header>
     <main>
     <!-- Modal-2     -->
@@ -47,13 +32,13 @@
                         <div class="modal-body">
                             <form  action="mail.php" method="post" class="modal-form">
     
-                                    <input class="form-control" type="text" placeholder="Your name" name="name">
+                                    <input class="form-control" type="text" placeholder="Your name *" name="name">
         
-                                    <input class="form-control" type="number" placeholder="Mobile number" name="number">
+                                    <input class="form-control" type="number" placeholder="Mobile number *" name="number">
         
-                                    <input class="form-control" type="text" placeholder="Your Email" name="email">
+                                    <input class="form-control" type="text" placeholder="Your Email *" name="email">
         
-                                    <textarea class="form-control" placeholder="Your description" name="description"></textarea>
+                                    <textarea class="form-control" placeholder="Your description *" name="description"></textarea>
 
                                     <p>Floor plan</p>
                                     <input type="radio" id="2bhk" name="fav_language" value="HTML">
@@ -64,12 +49,13 @@
     
                                     <div class="g-recaptcha" data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"></div>
 
-                            </form> 
-                        </div>
-                        <div class="modal-footer">
+                                    <div class="modal-footer">
                             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
                             <button  type="submit" value="Submit" class="btn btn-outline-warning">submit</button>
                         </div>
+                            </form> 
+                        </div>
+                        
                     </div>
                 </div>
             </div>  
@@ -502,8 +488,10 @@
     <?php include ('./include/footer.php'); ?>
 
     <!-- javascript -->
-    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owlcarousel/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- javascript -->

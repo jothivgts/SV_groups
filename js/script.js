@@ -141,4 +141,61 @@ function FormInvalidMessagePurpose(select) {
 }
 
 
+$( "#enquiryform" ).validate({
+  ignore: ".ignore",
+  rules: {
+    yourname: {
+      required: true
+    },emailaddress: {
+      required: true,
+      email : true,
+      required: true
+    },
+    mobilenumber: {
+      required: true,
+		  number: true,
+		  minlength: 10,
+		  maxlength: 10
+    },
+    description:{
+      required: true,
+    },
+    hiddenRecaptcha: {
+      required: function () {
+        return document.getElementById("hiddenRecaptcha").value == "";
+      }
+    }
+  },
+  messages: {
+    yourname: "Kindly enter your name",
+    emailaddress: {
+      required: "Kindly enter your email address",
+      email: "Enter valid format"
+    }
+    ,
+    mobilenumber: {
+      required: "Kindly enter your mobile number",
+      number: "Enter valid mobile number",
+		  minlength: "Enter valid mobile number",
+		  maxlength: "Enter valid mobile number"
+    },
+    description : {
+      required: "Kindly enter description",
+    }
+  },  
+  submitHandler: function(form){
+    form.submit();
+  }
+});
+
+function recaptchaCallback(callbackvalue) {
+  document.getElementById("hiddenRecaptcha").value = callbackvalue;
+};
+
+
+
+
+
+
+
 
