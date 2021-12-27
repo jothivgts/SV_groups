@@ -21,7 +21,7 @@
       <!-- Nav -->
       <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a href="./index.html" class="navbar-brand">
+            <a href="./index.php" class="navbar-brand">
             <img src="images/sv_logo_icon-1 1.svg" alt="sv" />
           </a>
 
@@ -36,11 +36,11 @@
 
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item"> <a href="./index.html" class="nav-link">HOME</a> </li>
-                <li class="nav-item"> <a href="./about.html" class="nav-link">ABOUT US</a> </li>
-                <li class="nav-item"> <a href="./project.html" class="nav-link">PROJECTS</a> </li>
-                <li class="nav-item"> <a href="./carrer.html" class="nav-link">CAREER</a> </li>
-                <li class="nav-item"> <a href="./contact-us.html" class="nav-link">CONTACT</a> </li>
+                <li class="nav-item"> <a href="./index.php" class="nav-link">HOME</a> </li>
+                <li class="nav-item"> <a href="./about.php" class="nav-link">ABOUT US</a> </li>
+                <li class="nav-item"> <a href="./project.php" class="nav-link">PROJECTS</a> </li>
+                <li class="nav-item"> <a href="./carrer.php" class="nav-link">CAREER</a> </li>
+                <li class="nav-item"> <a href="./contact-us.php" class="nav-link">CONTACT</a> </li>
                 <li class="nav-item"><button class="ani-b">
                     <span> For Enquire<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
