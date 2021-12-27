@@ -184,13 +184,24 @@ $( "#enquiryform" ).validate({
     }
   },  
   submitHandler: function(form){
-    form.submit();
+    let yourname = $('#yourname').val();
+    let emailaddress = $('#mobilenumber').val();
+    let mobilenumber = $('#mobilenumber').val();
+    let description = $('#description').val();
+
+    let fordata = { yourname,emailaddress,mobilenumber,description };
+
+    $.get("backend/enquirymail.php",fordata,function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+
   }
 });
 
 function recaptchaCallback(callbackvalue) {
   document.getElementById("hiddenRecaptcha").value = callbackvalue;
 };
+
 
 
 
