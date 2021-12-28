@@ -85,28 +85,36 @@
                           <path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path>
                         </svg>
                     </button>
-                    <form action="backend/mail.php" method="post" class="form_block">
+                    <form class="form_block" id="exploreform" name="exploreform">
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="name">Name</label>
-                            <input class="form-control" type="text" placeholder="Leslie Alexander" name="name">
+                            <label class="form-label" for="explore_yourname">Name *</label>
+                            <input class="form-control" type="text" placeholder="Leslie Alexander" name="explore_yourname" id="explore_yourname">
                         <!-- </div> -->
 
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="number">Contact Number</label>
-                            <input class="form-control" type="number" placeholder="99808 78654" name="number">
+                            <label class="form-label" for="number">Contact Number *</label>
+                            <input class="form-control" type="number" placeholder="99808 78654" name="explore_mobilenumber" id="explore_mobilenumber">
                         <!-- </div> -->
 
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="email">Email</label>
-                            <input class="form-control" type="text" placeholder="example@mail.com" name="email">
+                            <label class="form-label" for="email">Email *</label>
+                            <input class="form-control" type="text" placeholder="example@mail.com" name="explore_emailaddress" id="explore_emailaddress" >
                         <!-- </div> -->
 
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="description">Description</label>
+                            <label class="form-label" for="description">Description *</label>
                             <textarea class="form-control" placeholder="Your description" name="description"></textarea>
                         <!-- </div> -->
 
-                        <button class="g-recaptcha form-btn" data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4" data-callback='onSubmit' type="submit" value="Submit">
+                        <div 
+                           class="g-recaptcha" 
+                           data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
+                           data-callback="homeRecaptcha"
+                           >
+                            </div>
+                            <input type="hidden" name="homeRecaptcha" id="homeRecaptcha" value="">
+
+                        <button class="form-btn" type="submit" value="Submit">
                             Explore Now
                             <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -493,6 +501,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/pages/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- javascript -->
 

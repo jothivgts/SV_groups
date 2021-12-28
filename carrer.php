@@ -27,20 +27,20 @@
       <section id="form">
           <div class="container">
               <div class="form-container">
-                    <form class="form_block">
+                    <form class="form_block" id="careerform" name="careerform">
                   <div class="form-group">
-                      <label class="form-label" for="name">Name</label>
-                      <input class="form-control" type="text" placeholder="Leslie Alexander" name="name">
+                      <label class="form-label" for="career_yourname">Name *</label>
+                      <input class="form-control" type="text" placeholder="Leslie Alexander" name="career_yourname" id="career_yourname">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="number">Contact Number</label>
-                      <input class="form-control" type="number" placeholder="99808 78654" name="number">
+                      <label class="form-label" for="number">Contact Number *</label>
+                      <input class="form-control" type="number" placeholder="99808 78654" name="career_mobilenumber" id="career_mobilenumber">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="email">Email</label>
-                      <input class="form-control" type="text" placeholder="example@mail.com" name="email">
+                      <label class="form-label" for="career_emailaddress">Email *</label>
+                      <input class="form-control" type="text" placeholder="example@mail.com" name="career_emailaddress"id="career_emailaddress">
                   </div>
           
                   <div class="form-group">
@@ -56,9 +56,6 @@
                       <div class="input-group">
                         <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
                         <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
-                        <br>
-                        <label for="formFile" class="form-label">Default file input example</label>
-                        <input class="form-control" type="file" id="formFile">
                       </div>
                   </div>
           
@@ -83,6 +80,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/pages/career.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- javascript -->
     
