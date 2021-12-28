@@ -61,6 +61,16 @@
             </div>  
         
         <!-- showcase -->
+
+<!-- The Modal -->
+<div id="masterPlanlightmodal" class="lightbox-modal">
+  <span class="lightboxclose">&times;</span>
+  <img class="lightbox-content" id="lightbox-image">
+    <div class="caption">
+    <a download="./images/img.jpg" href="./images/img.jpg" class="downloadplan" >Download</a> 
+  </div>
+</div>
+
         <div id="showcase">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -162,7 +172,7 @@
                                         </path>
                                     </svg>
                                     <h3 class="card_title">Master plan</h3>
-                                    <button class="card_btn">
+                                    <button class="card_btn" id="masterPlanopenBtn">
                                         <svg width="18" height="10" viewBox="0 0 21 12"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z" />

@@ -14,7 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
+
   <body>
+
+
+
+
     <header>
     <?php include('./include/navigation.php');?>
     </header>
@@ -24,6 +30,8 @@
         <h1>Career</h1>
       </section>
       <!-- Form -->
+
+
       <section id="form">
           <div class="container">
               <div class="form-container">
