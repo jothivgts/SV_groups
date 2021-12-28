@@ -61,6 +61,112 @@ $( "#exploreform" ).validate({
   
 
 
+//  Floor plan form start
+
+  $( "#floorplanform" ).validate({
+    ignore: ".ignore",
+    rules: {
+      floorplan_yourname: {
+        required: true
+      },floorplan_emailaddress: {
+        required: true,
+        email : true,
+        required: true
+      },
+      floorplan_mobilenumber: {
+        required: true,
+            number: true,
+            minlength: 10,
+            maxlength: 10
+      },
+      floorplan_description:{
+        required: true,
+      },
+      floorplan: { 
+        required: true
+      },
+      floorplanRecaptcha: {
+        required: function () {
+          return document.getElementById("floorplanRecaptcha").value == "";
+        }
+      }
+    },
+    messages: {
+      floorplan_yourname: "Kindly enter your name",
+      floorplan_emailaddress: {
+        required: "Kindly enter your email address",
+        email: "Enter valid format"
+      }
+      ,
+      floorplan_mobilenumber: {
+        required: "Kindly enter your mobile number",
+        number: "Enter valid mobile number",
+            minlength: "Enter valid mobile number",
+            maxlength: "Enter valid mobile number"
+      },
+      floorplan_description : {
+        required: "Kindly enter description",
+      }
+    },  
+    submitHandler: function(form){
+
+      let floorplan_yourname = $('#floorplan_yourname').val();
+      let floorplan_emailaddress = $('#floorplan_mobilenumber').val();
+      let floorplan_mobilenumber = $('#floorplan_mobilenumber').val();
+      let floorplan_description = $('#floorplan_description').val();
+      let floorplan = $('#floorplan').val();
+
+
+      let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description , floorplan };
+      
+     
+      let bhk2 = ['../../svgroups/asset/floorplan/sample.pdf','../../svgroups/asset/floorplan/sample.pdf'];
+      let bhk3 = ['../../svgroups/asset/floorplan/sample.pdf','../../svgroups/asset/floorplan/sample.pdf','../../svgroups/asset/floorplan/sample.pdf'];
+
+      if(floorplan === '2bhk'){
+        bhk2.forEach(filepath => {
+          window.open(filepath, "_blank");
+        });
+
+        bhk2.forEach(filepath => {
+        let link = document.createElement('a');
+        link.href = filepath;
+        link.download = filepath;
+        link.dispatchEvent(new MouseEvent('click'));
+        });
+
+      }else{
+        bhk3.forEach(filepath => {
+          window.open(filepath, "_blank");
+        });
+
+        bhk3.forEach(filepath => {
+        let link = document.createElement('a');
+        link.href = filepath;
+        link.download = filepath;
+        link.dispatchEvent(new MouseEvent('click'));
+        });
+      }
+      
+
+
+
+      // $.get("backend/enquirymail.php",fordata,function(data, status){
+      //   alert("Data: " + data + "\nStatus: " + status);
+      // });
+
+
+  
+    }
+  });
+  
+  function floorplanRecaptcha(callbackvalue) {
+    document.getElementById("floorplanRecaptcha").value = callbackvalue;
+  };
+
+// Floor plan form end
+
+
 // Home page lightbox strat
 
       // Get the modal

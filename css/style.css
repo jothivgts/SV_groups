@@ -1657,7 +1657,7 @@ select {
   color: red;
 }
 
-.enquiryformfooter {
+.modalformcustomfooter {
   display: flex;
   padding: 20px;
   border-top: 1px solid #dee2e6;

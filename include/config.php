@@ -1,0 +1,3 @@
+<?php
+$CAPTCHA_SITE_KEY = "6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4";
+?>

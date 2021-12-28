@@ -1,3 +1,4 @@
+<?php include('./include/config.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,56 +21,20 @@
     <?php include('./include/navigation.php');?>
     </header>
     <main>
-    <!-- Modal-2     -->
-
-        <div class="modal fade" id="form-modal-1" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="form-modal-title">Enquire Form</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form  action="backend/mail.php" method="post" class="modal-form">
-    
-                                    <input class="form-control" type="text" placeholder="Your name *" name="name">
-        
-                                    <input class="form-control" type="number" placeholder="Mobile number *" name="number">
-        
-                                    <input class="form-control" type="text" placeholder="Your Email *" name="email">
-        
-                                    <textarea class="form-control" placeholder="Your description *" name="description"></textarea>
-
-                                    <p>Floor plan</p>
-                                    <input type="radio" id="2bhk" name="fav_language" value="HTML">
-                                    <label for="2bhk">2BHK</label>
-
-                                    <input type="radio" id="3bhk" name="fav_language" value="HTML">
-                                    <label for="3bhk">3BHK</label><br>
-    
-                                    <div class="g-recaptcha" data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"></div>
-
-                                    <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
-                            <button  type="submit" value="Submit" class="btn btn-outline-warning">submit</button>
-                        </div>
-                            </form> 
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>  
-        
-        <!-- showcase -->
 
 <!-- The Modal -->
-<div id="masterPlanlightmodal" class="lightbox-modal">
-  <span class="lightboxclose">&times;</span>
-  <img class="lightbox-content" id="lightbox-image">
-    <div class="caption">
-    <a download="./images/img.jpg" href="./images/img.jpg" class="downloadplan" >Download</a> 
-  </div>
-</div>
+    <?php include('./include/modal/floorplanform.php');?>
+
+    <!-- lightbox -->
+    <div id="masterPlanlightmodal" class="lightbox-modal">
+    <span class="lightboxclose">&times;</span>
+    <img class="lightbox-content" id="lightbox-image">
+        <div class="caption">
+        <a download="./images/img.jpg" href="./images/img.jpg" class="downloadplan" >Download</a> 
+    </div>
+    </div>
+
+<!-- The Modal -->
 
         <div id="showcase">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -238,7 +203,7 @@
                                         </path>
                                     </svg>
                                     <h3 class="card_title">Floor Plan</h3>
-                                    <button class="card_btn" data-bs-toggle="modal" data-bs-target="#form-modal">
+                                    <button class="card_btn" data-bs-toggle="modal" data-bs-target="#floorplanform-modal">
                                         <svg width="18" height="10" viewBox="0 0 21 12"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z" />
