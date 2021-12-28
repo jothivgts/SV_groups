@@ -24,6 +24,7 @@
 
 <!-- The Modal -->
     <?php include('./include/modal/floorplanform.php');?>
+    <?php include('./include/modal/broucherform.php');?>
 
     <!-- lightbox -->
     <div id="masterPlanlightmodal" class="lightbox-modal">
@@ -181,7 +182,7 @@
                                         </path>
                                     </svg>
                                     <h3 class="card_title">Broucher</h3>
-                                    <button class="card_btn">
+                                    <button class="card_btn" data-bs-toggle="modal" data-bs-target="#broucherform-modal">
                                         <svg width="18" height="10" viewBox="0 0 21 12"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z" />
@@ -203,6 +204,7 @@
                                         </path>
                                     </svg>
                                     <h3 class="card_title">Floor Plan</h3>
+                                    
                                     <button class="card_btn" data-bs-toggle="modal" data-bs-target="#floorplanform-modal">
                                         <svg width="18" height="10" viewBox="0 0 21 12"
                                             xmlns="http://www.w3.org/2000/svg">

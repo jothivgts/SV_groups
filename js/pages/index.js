@@ -167,6 +167,86 @@ $( "#exploreform" ).validate({
 // Floor plan form end
 
 
+
+
+//  Broucher form start
+
+$( "#broucherform" ).validate({
+  ignore: ".ignore",
+  rules: {
+    broucherform_yourname: {
+      required: true
+    },broucherform_emailaddress: {
+      required: true,
+      email : true,
+      required: true
+    },
+    broucherform_mobilenumber: {
+      required: true,
+          number: true,
+          minlength: 10,
+          maxlength: 10
+    },
+    broucherform_description:{
+      required: true,
+    },
+    broucherformRecaptcha: {
+      required: function () {
+        return document.getElementById("broucherformRecaptcha").value == "";
+      }
+    }
+  },
+  messages: {
+    broucherform_yourname: "Kindly enter your name",
+    broucherform_emailaddress: {
+      required: "Kindly enter your email address",
+      email: "Enter valid format"
+    }
+    ,
+    broucherform_mobilenumber: {
+      required: "Kindly enter your mobile number",
+      number: "Enter valid mobile number",
+          minlength: "Enter valid mobile number",
+          maxlength: "Enter valid mobile number"
+    },
+    broucherform_description : {
+      required: "Kindly enter description",
+    }
+  },  
+  submitHandler: function(form){
+
+    let broucherform_yourname = $('#broucherform_yourname').val();
+    let broucherform_emailaddress = $('#broucherform_mobilenumber').val();
+    let broucherform_mobilenumber = $('#broucherform_mobilenumber').val();
+    let broucherform_description = $('#broucherform_description').val();
+
+    let fordata = { broucherform_yourname,broucherform_emailaddress,broucherform_mobilenumber,broucherform_description  };
+    
+   
+          let filepath = '../../svgroups/asset/broucherform/sample.pdf';
+          window.open(filepath, "_blank");
+          let link = document.createElement('a');
+          link.href = filepath;
+          link.download = filepath;
+          link.dispatchEvent(new MouseEvent('click'));
+      
+
+
+    // $.get("backend/enquirymail.php",fordata,function(data, status){
+    //   alert("Data: " + data + "\nStatus: " + status);
+    // });
+
+
+
+  }
+});
+
+function broucherformRecaptcha(callbackvalue) {
+  document.getElementById("broucherformRecaptcha").value = callbackvalue;
+};
+
+//  Broucher form end
+
 // Home page lightbox strat
 
       // Get the modal
