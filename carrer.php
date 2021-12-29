@@ -54,8 +54,15 @@
                   <div class="form-group">
                       <label class="form-label" for="position">Position</label>
                       <select name="position" id="position">
-                        <option value="job">job</option>
-                        <option value="job2">job2</option>
+                        <option value="admin">Admin/HR</option>
+                        <option value="accounts">Accounts</option>
+                        <option value="architect">Architect</option>
+                        <option value="marketing">Sales/Marketing</option>
+                        <option value="engineer">Site supervisor/Engineer</option>
+                        <option value="manager">Project Engineer/Manager</option>
+                        <option value="purchase">Purchase</option>
+                        <option value="tele-marketing">Tele-marketing</option>
+                        <option value="others">others</option>
                       </select>
                   </div>
 

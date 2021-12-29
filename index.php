@@ -35,8 +35,6 @@
     </div>
     </div>
 
-<!-- The Modal -->
-
         <div id="showcase">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -61,6 +59,7 @@
                           <path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path>
                         </svg>
                     </button>
+                    <!-- form -->
                     <form class="form_block" id="exploreform" name="exploreform">
                         <!-- <div class="form-group"> -->
                             <label class="form-label" for="explore_yourname">Name *</label>
@@ -82,20 +81,19 @@
                             <textarea class="form-control" placeholder="Your description" name="description"></textarea>
                         <!-- </div> -->
 
-                        <div 
-                           class="g-recaptcha" 
-                           data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
-                           data-callback="homeRecaptcha"
-                           >
+                            <div 
+                                class="g-recaptcha" 
+                                data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
+                                data-callback="homeRecaptcha">
                             </div>
                             <input type="hidden" name="homeRecaptcha" id="homeRecaptcha" value="">
 
-                        <button class="form-btn" type="submit" value="Submit">
-                            Explore Now
-                            <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
+                            <button class="form-btn" type="submit" value="Submit">
+                                Explore Now
+                                <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z"></path>
-                            </svg>
+                                    <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z"></path>
+                                </svg>
                         </button>
                     </form>
                 </div>
@@ -452,18 +450,43 @@
                     </div>
                     <div class="item">
                         <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                        <p>Very Good apartment.Nice Look and attractive appartment</p>
-                        <h4>S Sawan Kumar</h4>
+                        <p>Quality of construction is amazing. Sales team is well informed and able to help as required. They are making good progress.</p>
+                        <h4>Balagi Rajamanickam</h4>
                     </div>
                     <div class="item">
                         <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                        <p>Good quality construction and design in Nice location</p>
-                        <h4>Nekkanti Srinivasulu</h4>
+                        <p>Excellent infrastructure and amenities. Construction Quality is very superior, the management and staff all are very co operative.</p>
+                        <h4>J C Ganesh Kumar</h4>
                     </div>
                     <div class="item">
                         <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                        <p>SV GROUPS has grown swiftly to become one of the leading Property Developers, helping shape skyline across the Residential, Commercial, Retail ....</p>
-                        <h4>Name</h4>
+                        <p>Quality mind person & Construction quality is high and technology. The team is very polite & respectful to customers. Special thanks to the SV GROUPS team for bringing up the best property at an affordable price.</p>
+                        <h4>A Nagaraj</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Amazing infrastructure in SV GRANDEUR and good work from SV GROUPS. Congratulations to the team and please continue to develop new projects for people’s benefit.</p>
+                        <h4>C Karthikeyan</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>This place is good from outside and inside. Flats are super with ventilation. I like the flats. The Best apartment I Have visited so far. Very well built.</p>
+                        <h4>S Raghavendra Rao</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Nice Society. Looks very modern with all amenities. Management is very friendly and helpful.</p>
+                        <h4>Karthik Krishna Arige</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Very good construction quality and nice sales team. The quality of the work done is clearly better than many apartments around the area and equivalent to top builders in Bangalore.</p>
+                        <h4>M Muthiah</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>I liked the construction quality and behavior. I went on the occasion of Temple inauguration day and booked it within 2 days.Construction quality is very good.</p>
+                        <h4>Som Nath Mishra</h4>
                     </div>
                 </div>
             </div>

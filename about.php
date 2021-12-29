@@ -27,7 +27,7 @@
       <section id="history">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
-              <div class="col-md-7">
+              <div class="col-md-6">
                 <h3>OUR HISTORY</h3>
                 <h2 class="mb-sm-5 mb-4">Quality & Passion With Our Services</h2>
                 <h4 class="mb-2">Departure performed exquisite</h4>

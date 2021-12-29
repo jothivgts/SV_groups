@@ -30,7 +30,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   position: relative;
   font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
@@ -163,8 +163,7 @@ nav {
   width: 34vw;
 }
 
-.form_block input,
-select {
+.form_block input, select {
   background: #ffffff;
   border: 1px solid #9a9a9a;
   height: 48px;
@@ -194,8 +193,12 @@ select {
   font-size: 14px;
 }
 
-.modal-form .form-control {
+.modal-form .form-control{
   margin-bottom: 1.5rem;
+}
+
+#formFile {
+  height: auto;
 }
 
 #history {
@@ -231,7 +234,7 @@ select {
   font-weight: 400;
 }
 
-.history-img {
+.history-img{
   margin-left: 80px;
 }
 
@@ -305,7 +308,7 @@ select {
   width: 675px;
 }
 
-.form_block select {
+.form_block select{
   width: 100%;
   border: 1px solid #9a9a9a;
   border-radius: 5px;
@@ -353,7 +356,7 @@ select {
   margin: 50px 0;
 }
 
-#contact-container iframe {
+#contact-container iframe{
   /* position: absolute; */
   top: 0;
   left: 0;
@@ -452,18 +455,19 @@ select {
 
 .about-3 p {
   text-align: center !important;
-  margin: 0 15vw;
+  margin: 0 15vw;  
   margin-bottom: 40px;
+
 }
 
-.list_block li {
+.list_block li{
   border: 2px solid #e5e5e5;
   display: block;
   transition: all 0.3s ease-in-out;
   position: relative;
+
 }
-.list_block li:before,
-.list_block li:after {
+.list_block li:before, .list_block li:after {
   width: 0%;
   height: 2px;
   position: absolute;
@@ -482,8 +486,7 @@ select {
 .list_block li:hover {
   border-color: #e5c100;
 }
-.list_block li:hover:before,
-.list_block li:hover:after {
+.list_block li:hover:before, .list_block li:hover:after {
   width: 100%;
 }
 
@@ -499,7 +502,7 @@ select {
   z-index: 2;
 }
 
-#first_slider .owl-dots {
+#first_slider .owl-dots{
   visibility: hidden;
   position: absolute;
 }
@@ -531,6 +534,7 @@ select {
 }
 
 .owl-item.active.center .item .carousel-banner h4 {
+
   color: black;
   font-weight: bold;
   font-size: 24px;
@@ -575,12 +579,12 @@ select {
   left: 20px;
 }
 
-.accordion-body {
+.accordion-body{
   padding-bottom: 0;
 }
 
-.accordion-body p {
-  padding-bottom: 0.5rem;
+.accordion-body p{
+  padding-bottom: .5rem;
 }
 
 .testimonials h3 {
@@ -664,7 +668,7 @@ select {
   justify-content: flex-end;
 }
 
-.socil:link {
+.socil:link{
   color: #e5e5e5;
 }
 
@@ -768,7 +772,7 @@ select {
   border: 1px solid #e5e5e5;
 }
 
-#second_slider .item h4 {
+#second_slider .item h4 { 
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -849,9 +853,9 @@ select {
 
 .card_info {
   /* display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    text-align: center; */
+  flex-direction: column;
+  align-content: space-around;
+  text-align: center; */
   height: 100%;
   z-index: 2;
   background-color: #fff;
@@ -1145,8 +1149,8 @@ select {
       font-weight: 700;
       position: absolute;
       /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -20%); */
+      left: 50%;
+      transform: translate(-50%, -20%); */
     }
 
     .iframe-container-about iframe {
@@ -1243,7 +1247,7 @@ select {
       margin-top: 15px;
       /* margin-left: 15px; */
       /* padding: 0px; */
-      width: 45%;
+      width: 43%;
       align-items: stretch;
       margin-right: 16px;
       font-size: 12px;
@@ -1378,23 +1382,22 @@ select {
   .banner {
     display: none;
   }
-
+  
   .banner h1 {
     font-size: 26px;
   }
 
-  .about-1 .content {
+  .about-1 .content{
     padding-right: 10px;
   }
 
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-control-prev, .carousel-control-next {
     /* top: auto !important; */
     bottom: 0;
     display: block;
     width: 2%;
     opacity: 1;
-  }
+}
 
   #showcase {
     margin-top: 51.6px;
@@ -1414,7 +1417,7 @@ select {
 
   .about-3 {
     padding: 0;
-    padding-bottom: 25px;
+    padding-bottom: 25px ;
   }
 
   .about-3 p {
@@ -1435,7 +1438,7 @@ select {
 
   .side_block {
     height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem ;
     margin-top: 15px !important;
   }
 
@@ -1471,16 +1474,15 @@ select {
     align-items: center;
   }
 
-  .footer-1 h3 {
+  .footer-1 h3{
     font-size: 18px;
   }
 
-  .footer-1 h4 {
+  .footer-1 h4{
     font-size: 14px;
   }
 
-  .footer-2,
-  .footer-3 p {
+  .footer-2, .footer-3 p{
     font-size: 12px;
   }
 
@@ -1488,15 +1490,8 @@ select {
     font-size: 12px !important;
   }
 
-  .form-container {
-  }
-
   .form_block {
     width: 80vw;
-  }
-
-  .cinfo {
-    /* display: none; */
   }
 
   #contact-container iframe {
@@ -1509,10 +1504,6 @@ select {
     padding-bottom: 30px;
   }
 }
-
-/*  */
-
-/* #1d1d1d: #1d1d1d; */
 
 .ani-b {
   font-size: 14px;
@@ -1652,115 +1643,3 @@ select {
   opacity: 1;
   right: -2rem;
 }
-
-.error {
-  color: red;
-}
-
-.modalformcustomfooter {
-  display: flex;
-  padding: 20px;
-  border-top: 1px solid #dee2e6;
-  margin-top: 10px;
-  justify-content: end;
-}
-
-.downloadplan {
-  display: block;
-  padding: 10px;
-  color: #fff;
-}
-.downloadplan:hover {
-  color: #fff;
-}
-
-/* Home page lightbox */
-
-/* The Modal (background) */
-.lightbox-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.lightbox-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-.caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.lightbox-content,
-.caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* The Close Button */
-.lightboxclose {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.lightboxclose:hover,
-.lightboxclose:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .lightbox-content {
-    width: 100%;
-  }
-}
-
-/* Home page lightbox */

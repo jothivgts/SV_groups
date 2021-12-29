@@ -42,14 +42,15 @@ $( "#exploreform" ).validate({
     },  
     submitHandler: function(form){
       let explore_yourname = $('#explore_yourname').val();
-      let explore_emailaddress = $('#explore_mobilenumber').val();
+      let explore_emailaddress = $('#explore_emailaddress').val();
       let explore_mobilenumber = $('#explore_mobilenumber').val();
       let explore_description = $('#explore_description').val();
   
       let fordata = { explore_yourname,explore_emailaddress,explore_mobilenumber,explore_description };
   
       $.get("backend/enquirymail.php",fordata,function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
+        alert("Form submited");
+        // alert("Data: " + data + "\nStatus: " + status);
       });
   
     }
@@ -119,9 +120,9 @@ $( "#exploreform" ).validate({
 
       let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description , floorplan };
       
-     
-      let bhk2 = ['../../svgroups/asset/floorplan/sample.pdf','../../svgroups/asset/floorplan/sample.pdf'];
-      let bhk3 = ['../../svgroups/asset/floorplan/sample.pdf','../../svgroups/asset/floorplan/sample.pdf','../../svgroups/asset/floorplan/sample.pdf'];
+
+      let bhk2 = ['../../svgroups/asset/t2.jpg','../../svgroups/asset/t5.jpg'];
+      let bhk3 = ['../../svgroups/asset/t1.jpg','../../svgroups/asset/t3.jpg','../../svgroups/asset/t4.jpg','../../svgroups/asset/t6.jpg'];
 
       if(floorplan === '2bhk'){
         bhk2.forEach(filepath => {
@@ -151,9 +152,10 @@ $( "#exploreform" ).validate({
 
 
 
-      // $.get("backend/enquirymail.php",fordata,function(data, status){
-      //   alert("Data: " + data + "\nStatus: " + status);
-      // });
+      $.get("backend/enquirymail.php",fordata,function(data, status){
+        // alert("Data: " + data + "\nStatus: " + status);
+        alert('form submited');
+      });
 
 
   
@@ -232,9 +234,10 @@ $( "#broucherform" ).validate({
       
 
 
-    // $.get("backend/enquirymail.php",fordata,function(data, status){
-    //   alert("Data: " + data + "\nStatus: " + status);
-    // });
+    $.get("backend/enquirymail.php",fordata,function(data, status){
+      // alert("Data: " + data + "\nStatus: " + status);
+      alert('Form submited');
+    });
 
 
 
