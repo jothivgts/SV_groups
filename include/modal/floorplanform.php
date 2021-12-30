@@ -41,10 +41,10 @@
                            ></textarea>
 
                             <p>Floor plan</p>
-                            <input type="radio" id="2bhk" name="floorplan" value="2bhk">
+                            <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">
                             <label for="2bhk">2BHK</label>
 
-                            <input type="radio" id="3bhk" name="floorplan" value="3bhk">
+                            <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">
                             <label for="3bhk">3BHK</label><br>
 
                            <div 

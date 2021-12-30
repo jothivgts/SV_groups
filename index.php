@@ -78,7 +78,7 @@
 
                         <!-- <div class="form-group"> -->
                             <label class="form-label" for="description">Description *</label>
-                            <textarea class="form-control" placeholder="Your description" name="description"></textarea>
+                            <textarea class="form-control" placeholder="Your description" name="explore_description" id="explore_description"></textarea>
                         <!-- </div> -->
 
                             <div 
