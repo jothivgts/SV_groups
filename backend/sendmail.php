@@ -14,12 +14,7 @@ $mail = new PHPMailer(true);
 
 try {
 
-    // $name="Nesamani";$mobile ="8973409433" ; $email = "Nesamani@gmail.com" ; $content  = "Nesamani@gmail.com";
-    $name = $_POST['explore_yourname'];
-    $number = $_POST['explore_emailaddress'];
-    $email = $_POST['explore_mobilenumber'];
-    $description = $_POST['explore_description'];
-    
+    $name="Nesamani";$mobile ="8973409433" ; $email = "Nesamani@gmail.com" ; $content  = "Nesamani@gmail.com";
     $mail->isSMTP(); 
     $mail->SMTPAuth   = true;                                 //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
@@ -34,22 +29,22 @@ try {
     $mail->SetFrom('fromgmail@gmail.com', 'Pricol Technologies');                                
     $mail->Subject = 'Here is the subject';
     $mail->Body    = 
-        "<!DOCTYPE html>
-        <html lang='en'>
-            <head>
-                <meta charset='UTF-8'>
-                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                <title>Document</title>
-            </head>
-            <body>
-                Name : ".$name." <br/>
-                Email : ".$email." <br/>
-                Mobile : ".$mobile." <br/>
-                Content : ".$content." <br/>
-            </body>
-        </html>
-        ";
+"<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Document</title>
+</head>
+<body>
+Name : ".$name." <br/>
+Email : ".$email." <br/>
+Mobile : ".$mobile." <br/>
+Content : ".$content." <br/>
+</body>
+</html>
+";
 
     $mail->isHTML(true);
 
@@ -63,4 +58,3 @@ try {
 
     echo json_encode((object) ["sent" => false, "message" => $mail->ErrorInfo]);
 }
-
