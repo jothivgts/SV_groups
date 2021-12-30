@@ -188,13 +188,19 @@ $( "#enquiryform" ).validate({
     let emailaddress = $('#mobilenumber').val();
     let mobilenumber = $('#mobilenumber').val();
     let description = $('#description').val();
-
     let fordata = { yourname,emailaddress,mobilenumber,description };
 
+    //Button load
+    document.getElementById("enquiryform_submitbtn").disabled = true;
+    document.getElementById("enquiryform_submitbtn").innerHTML = "Loading ..."; 
+    
     $.get("backend/enquirymail.php",fordata,function(data, status){
-      alert("Data: " + data + "\nStatus: " + status);
+      //After mail sent
+      $('#form-modal').modal('toggle');
+      document.getElementById("enquiryform").reset();
+      document.getElementById("enquiryform_submitbtn").disabled = false;
+      document.getElementById("enquiryform_submitbtn").innerHTML = "Submit"; 
     });
-
   }
 });
 
