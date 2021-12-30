@@ -1,4 +1,6 @@
-$( "#careerform" ).validate({
+$("#careerform").submit(function(e) {
+  e.preventDefault();
+}).validate({
     rules: {
       career_yourname: {
         required: true
@@ -15,6 +17,10 @@ $( "#careerform" ).validate({
       },
       career_position:{
         required: true,
+      },
+      resume:{
+        required: true,
+        extension: "pdf"
       }
     },
     messages: {
@@ -31,18 +37,51 @@ $( "#careerform" ).validate({
             maxlength: "Enter valid mobile number"
       },
       career_position : {
-        required: "Kindly enter description",
-      }
+        required: "Kindly choose description",
+      },
+
     },  
     submitHandler: function(form){
-      let career_yourname = $('#career_yourname').val();
-      let career_emailaddress = $('#career_mobilenumber').val();
-      let career_mobilenumber = $('#career_mobilenumber').val();
-      let career_position = $('#career_position').val();
-  
-      let fordata = { career_yourname,career_emailaddress,career_mobilenumber,career_position };
- 
-    
-      console.log(fordata);
+      callApicall(form)
     }
   });
+
+  function callApicall(form) {
+
+    let yourname = $('#career_yourname').val();
+    let emailaddress = $('#career_emailaddress').val();
+    let mobilenumber = $('#career_mobilenumber').val();
+    let position = $('#career_position').val();
+    let fordata = { yourname,emailaddress,mobilenumber,position };
+    
+    var formData = new FormData();
+
+    let props = $('#resume').prop('files');
+		let file = props[0];
+     
+    formData.append("career_yourname", $('#career_yourname').val())
+    formData.append("career_emailaddress", $('#career_emailaddress').val());
+    formData.append("career_mobilenumber", $('#career_mobilenumber').val());
+    formData.append("career_position", $('#career_position').val());
+    formData.append("resume", file,"resume.pdf");
+
+    //Button load
+    document.getElementById("careerbtn").disabled = true;
+    
+     $.ajax({
+      url: 'backend/career.php',
+      data: formData,
+      cache: false,
+      contentType: false,
+      processData: false,
+      method: 'POST',
+      type: 'POST',
+      success: function(data){
+        document.getElementById("careerform").reset();
+        document.getElementById("careerbtn").disabled = false;
+        alert('File has been sent');
+      }
+  });
+
+
+  }

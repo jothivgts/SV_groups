@@ -16,10 +16,7 @@
 </head>
 
 
-  <body>
-
-
-
+<body>
 
     <header>
     <?php include('./include/navigation.php');?>
@@ -35,7 +32,7 @@
       <section id="form">
           <div class="container">
               <div class="form-container">
-                    <form class="form_block" id="careerform" name="careerform">
+                    <form class="form_block" id="careerform" name="careerform" >
                   <div class="form-group">
                       <label class="form-label" for="career_yourname">Name *</label>
                       <input class="form-control" type="text" placeholder="Leslie Alexander" name="career_yourname" id="career_yourname">
@@ -52,8 +49,8 @@
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="position">Position</label>
-                      <select name="position" id="position">
+                      <label class="form-label" for="career_position">Position</label>
+                      <select name="career_position" id="career_position">
                         <option value="admin">Admin/HR</option>
                         <option value="accounts">Accounts</option>
                         <option value="architect">Architect</option>
@@ -67,11 +64,11 @@
                   </div>
 
                   <div class="form_group">
-                      <label for="resume" class="form-label">Attach Your Resume</label><br>
-                        <input style="height:10px" class="form-control form-control-lg" id="formFileLg" type="file">
-                    </div>
+                      <label for="resume" class="form-label">Attach Your Resume (PDF)</label><br>
+                        <input style="height:10px" class="form-control form-control-lg" id="resume" name="resume" type="file">
+                  </div>
           
-                  <button type="submit" class="cform-btn">
+                  <button type="submit" id="careerbtn" class="cform-btn">
                       Submit
                       <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
                           xmlns="http://www.w3.org/2000/svg">
