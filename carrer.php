@@ -67,12 +67,9 @@
                   </div>
 
                   <div class="form_group">
-                      <label for="resume" class="form-label">Attach Your Resume</label>
-                      <div class="input-group">
-                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
-                        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
-                      </div>
-                  </div>
+                      <label for="resume" class="form-label">Attach Your Resume</label><br>
+                        <input style="height:10px" class="form-control form-control-lg" id="formFileLg" type="file">
+                    </div>
           
                   <button type="submit" class="cform-btn">
                       Submit

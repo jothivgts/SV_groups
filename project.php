@@ -186,32 +186,57 @@
 
     <!-- testimonials -->
     <section id="testimonials">
-        <div class="testimonials container">
-            <h3>CLIENT SAYS <br><span>TESTIMONIALS</span></h3>
-            <div class=" owl-carousel owl-theme" id="second_slider">
-                <div class="item">
-                    <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                    <p>One of the best Quality construction apartment in Phase 2 Electronic City. Value for Money. Sales team members always respond for all queries</p>
-                    <h4>S Satish</h4>
-                </div>
-                <div class="item">
-                    <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                    <p>Very Good apartment.Nice Look and attractive appartment</p>
-                    <h4>S Sawan Kumar</h4>
-                </div>
-                <div class="item">
-                    <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                    <p>Good quality construction and design in Nice location</p>
-                    <h4>Nekkanti Srinivasulu</h4>
-                </div>
-                <div class="item">
-                    <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                        <p>SV GROUPS has grown swiftly to become one of the leading Property Developers, helping shape skyline across the Residential, Commercial, Retail ....</p>
-                    <h4>Name</h4>
+            <div class="testimonials container">
+                <h3>CLIENT SAYS <br><span>TESTIMONIALS</span></h3>
+                <div class=" owl-carousel owl-theme" id="second_slider">
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>One of the best Quality construction apartment in Phase 2 Electronic City. Value for Money. Sales team members always respond for all queries</p>
+                        <h4>S Satish</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Quality of construction is amazing. Sales team is well informed and able to help as required. They are making good progress.</p>
+                        <h4>Balagi Rajamanickam</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Excellent infrastructure and amenities. Construction Quality is very superior, the management and staff all are very co operative.</p>
+                        <h4>J C Ganesh Kumar</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Quality mind person & Construction quality is high and technology. The team is very polite & respectful to customers. Special thanks to the SV GROUPS team for bringing up the best property at an affordable price.</p>
+                        <h4>A Nagaraj</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Amazing infrastructure in SV GRANDEUR and good work from SV GROUPS. Congratulations to the team and please continue to develop new projects for people’s benefit.</p>
+                        <h4>C Karthikeyan</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>This place is good from outside and inside. Flats are super with ventilation. I like the flats. The Best apartment I Have visited so far. Very well built.</p>
+                        <h4>S Raghavendra Rao</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Nice Society. Looks very modern with all amenities. Management is very friendly and helpful.</p>
+                        <h4>Karthik Krishna Arige</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>Very good construction quality and nice sales team. The quality of the work done is clearly better than many apartments around the area and equivalent to top builders in Bangalore.</p>
+                        <h4>M Muthiah</h4>
+                    </div>
+                    <div class="item">
+                        <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
+                        <p>I liked the construction quality and behavior. I went on the occasion of Temple inauguration day and booked it within 2 days.Construction quality is very good.</p>
+                        <h4>Som Nath Mishra</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 

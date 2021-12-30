@@ -162,6 +162,9 @@ nav {
   background: rgba(48, 48, 48, 0.7);
   width: 34vw;
 }
+.g-recaptcha{
+  margin-top: 15px;
+}
 
 .form_block input,
 select {
@@ -189,7 +192,7 @@ select {
   padding: 13px;
   width: 100%;
   border: none;
-  margin-top: 26px;
+  margin-top: 10px;
   color: #1f1f1f;
   font-size: 14px;
 }
@@ -305,6 +308,16 @@ select {
   justify-content: center;
 }
 
+#enquiryform .g-recaptcha {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#floorplanform .radio {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
 .form_block {
   width: 675px;
 }
@@ -335,7 +348,7 @@ select {
 }
 
 .iframe-container-about iframe {
-  height: 500px;
+  height: 460px;
   width: 100%;
 }
 
@@ -406,7 +419,7 @@ select {
 }
 
 .content .scroll {
-  height: 500px;
+  height: 460px;
 }
 
 .content p {
@@ -1270,6 +1283,10 @@ select {
       /* margin-top: 7rem; */
     }
 
+    #second_slider .item {
+      height: 18rem;
+    }
+
     #testimonials .owl-carousel .item p {
       margin-top: 5px;
       font-size: 15px;
@@ -1450,6 +1467,7 @@ select {
 
   #testimonials {
     padding: 0;
+    margin: 0;
   }
 
   .card_info .icon {

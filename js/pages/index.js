@@ -47,10 +47,23 @@ $( "#exploreform" ).validate({
       let explore_description = $('#explore_description').val();
   
       let fordata = { explore_yourname,explore_emailaddress,explore_mobilenumber,explore_description };
-  
-      $.get("backend/enquirymail.php",fordata,function(data, status){
-        alert("Form submited");
-        // alert("Data: " + data + "\nStatus: " + status);
+      
+      console.log(fordata);
+
+      // $.ajax({
+      //   // type: 'post',
+      //   url: 'backend/sendmailpost.php',
+      //   data: fordata,
+      //   success: function(data)
+      //   {
+      //       alert(data); 
+      //   }
+      // });
+
+      $.get("backend/sendmail.php",fordata,function(data, status)
+      {
+        // alert("Form submited" + data);
+        alert("Data: " + data + "\nStatus: " + status);
       });
   
     }
