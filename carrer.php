@@ -26,9 +26,9 @@
     </header>
     <main>
       <!-- banner -->
-      <section class="banner">
+      <!-- <section class="banner">
         <h1>Career</h1>
-      </section>
+      </section> -->
       <!-- Form -->
 
 
@@ -37,23 +37,22 @@
               <div class="form-container">
                     <form class="form_block" id="careerform" name="careerform">
                   <div class="form-group">
-                      <label class="form-label" for="career_yourname">Name *</label>
-                      <input class="form-control" type="text" placeholder="Leslie Alexander" name="career_yourname" id="career_yourname">
+                      
+                      <input class="form-control" type="text" placeholder="Name" name="career_yourname" id="career_yourname">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="number">Contact Number *</label>
-                      <input class="form-control" type="number" placeholder="99808 78654" name="career_mobilenumber" id="career_mobilenumber">
+                      <input class="form-control" type="number" placeholder="Contact Number" name="career_mobilenumber" id="career_mobilenumber">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="career_emailaddress">Email *</label>
-                      <input class="form-control" type="text" placeholder="example@mail.com" name="career_emailaddress"id="career_emailaddress">
+                      <input class="form-control" type="text" placeholder="Email" name="career_emailaddress"id="career_emailaddress">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="position">Position</label>
+                      
                       <select name="position" id="position">
+                        <option value="" disabled selected>Select your option</option>
                         <option value="admin">Admin/HR</option>
                         <option value="accounts">Accounts</option>
                         <option value="architect">Architect</option>

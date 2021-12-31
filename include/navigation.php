@@ -22,7 +22,7 @@
                 <li class="nav-item"> <a href="./project.php" class="nav-link">PROJECTS</a> </li>
                 <li class="nav-item"> <a href="./carrer.php" class="nav-link">CAREER</a> </li>
                 <li class="nav-item"> <a href="./contact-us.php" class="nav-link">CONTACT</a> </li>
-                <li class="nav-item"><button class="ani-b" data-bs-toggle="modal" data-bs-target="#form-modal">
+                <!-- <li class="nav-item"><button class="ani-b" data-bs-toggle="modal" data-bs-target="#form-modal">
                             <span> For Enquire<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8"
@@ -36,7 +36,7 @@
                                         </g>
                                     </svg></span>
                             </button>
-                        </li>
+                        </li> -->
             </ul>
           </div>
         </div>

@@ -5,7 +5,7 @@ $(document).ready(function () {
     loop: true,
     center: true,
     margin: 20,
-    nav: true,
+    nav: false,
     // navText: ["<i class='fas fa-arrow-right'></i>","<img src='arrow-right-solid.svg'>"],
     autoplay: false,
     responsiveClass: true,

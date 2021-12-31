@@ -72,7 +72,8 @@ nav {
 }
 
 .navbar.scrollUp {
-  transform: translateY(-87px) !important;
+  position: -webkit-sticky;
+  top:0;
 }
 
 .nav-btn {
@@ -107,12 +108,11 @@ nav {
   margin-right: 0;
 }
 
-#navmenu li:last-child a {
+/* #navmenu li:last-child a {
   padding: 10px 30px;
-}
-
+} */
 #navmenu li:nth-child(5) {
-  margin-right: 60px;
+  margin-right: 0px;
 }
 
 .carousel-control-prev,
@@ -172,7 +172,7 @@ select {
   border: 1px solid #9a9a9a;
   height: 48px;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .form_block .form-label {
@@ -181,6 +181,7 @@ select {
 }
 
 #showcase .form_block textarea {
+  margin-top: 15px;
   border: 1px solid #9a9a9a;
   resize: none;
   height: 8vw;
@@ -198,7 +199,7 @@ select {
 }
 
 .modal-form .form-control {
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 #formFile {
@@ -309,7 +310,7 @@ select {
 }
 
 #enquiryform .g-recaptcha {
-  margin-top: -10px;
+  /* margin-top: -10px; */
   margin-bottom: 15px;
 }
 
@@ -527,11 +528,15 @@ select {
 }
 
 #projects .owl-item {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .owl-item.active.center {
-  filter: none !important;
+  /* filter: none !important; */
+}
+
+#contact_description {
+  margin-top: 15px !important;
 }
 
 .owl-item.active.center .item .carousel-banner {
@@ -1007,12 +1012,12 @@ select {
     margin-right: 0;
   }
 
-  #navmenu li:last-child a {
+  /* #navmenu li:last-child a {
     padding: 10px 25px;
-  }
+  } */
 
   #navmenu li:nth-child(5) {
-    margin-right: 40px;
+    margin-right: 0px;
   }
 
   #about {

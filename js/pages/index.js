@@ -274,7 +274,7 @@ function broucherformRecaptcha(callbackvalue) {
       
       masterPlanopenBtn.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = "./images/img.jpg";
+        modalImg.src = "./asset/masterplan.jpg";
       }
 
       // Get the <span> element that closes the modal

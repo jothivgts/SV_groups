@@ -20,9 +20,9 @@
     </header>
     <main>
       <!-- banner -->
-      <section class="banner">
+      <!-- <section class="banner">
         <h1>About Company</h1>
-      </section>
+      </section> -->
       <!-- history -->
       <section id="history">
         <div class="container py-5">
@@ -46,12 +46,12 @@
                   force for change and we instil this mindset culturally in
                   every element of our operations for project delivery.
                 </p>
-                <img
+                <!-- <img
                   class="signature my-4"
                   src="images/signature.svg"
                   alt="signature"
-                />
-                <h4>S.Venkatesh</h4>
+                /> -->
+                <h4 class="mt-3">S.Venkatesh</h4>
                 <h5>Chairman</h5>
               </div>
               <div class="col">
@@ -73,7 +73,7 @@
                       fill="#3C4F6E"
                     />
                   </svg>
-                  <span>20 +</span>
+                  <span>50 +</span>
                   <p>Commercial Projects</p>
                 </div>
                 <div class="col-5 col-sm">
@@ -89,7 +89,7 @@
                       fill="#3C4F6E"
                     />
                   </svg>
-                  <span>30 +</span>
+                  <span>110 +</span>
                   <p>Residential Projects</p>
                 </div>
                 <div class="col-5 col-sm">
@@ -105,7 +105,7 @@
                       fill="#3C4F6E"
                     />
                   </svg>
-                  <span>4 +</span>
+                  <span>25 +</span>
                   <p>Industrial Projects</p>
                 </div>
                 <div class="col-5 col-sm">
@@ -121,7 +121,7 @@
                       fill="#3C4F6E"
                     />
                   </svg>
-                  <span>500 +</span>
+                  <span>1000 +</span>
                   <p>Happy Customers</p>
                 </div>
               </div>

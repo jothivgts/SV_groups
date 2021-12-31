@@ -20,20 +20,20 @@
     </header>
     <main>
       <!-- banner -->
-      <section class="banner">
+      <!-- <section class="banner">
         <h1>Contact Us</h1>
-      </section>
+      </section> -->
       <!-- info -->
         <div class="container cinfo">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 ">
                     <h5>PHONE</h5>
                     <p>Head Office:<br> 080- 29505657</p>
-                    <p>Sale Office:<br> +91-9845001343, 9845001560,<br> 9845001792</p>
+                    <p>Sale Office:<br> +91-9845001343, 9845001560</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 ">
                     <h5>E-MAIL</h5>
-                    <p>admin@svgroups.in<br>www.svgroups.in</p>
+                    <p>admin@svgroups.in</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 ">
                     <div class="row">
@@ -48,27 +48,23 @@
       <section id="contact-container">
           <div class="container">
               <div class="row">
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-12">
                       <div class="form-container">
                             <form class="form_block" id="contactusform" name="contactusform">
                           <div class="form-group">
-                              <label class="form-label" for="name">Name *</label>
-                              <input class="form-control" type="text" placeholder="Leslie Alexander" name="contact_yourname" id="contact_yourname">
+                              <input class="form-control" type="text" placeholder="Name" name="contact_yourname" id="contact_yourname">
                           </div>
                   
                           <div class="form-group">
-                              <label class="form-label" for="number">Contact Number *</label>
-                              <input class="form-control" type="number" placeholder="99808 78654" name="contact_mobilenumber" id="contact_mobilenumber">
+                              <input class="form-control" type="number" placeholder="Contact Number" name="contact_mobilenumber" id="contact_mobilenumber">
                           </div>
                   
                           <div class="form-group">
-                              <label class="form-label" for="email">Email Address *</label>
-                              <input class="form-control" type="text" placeholder="example@mail.com" name="contact_emailaddress" id="contact_emailaddress">
+                              <input class="form-control" type="text" placeholder="Email" name="contact_emailaddress" id="contact_emailaddress">
                           </div>
                   
                         <div class="form-group">
-                            <label class="form-label" for="description">Description *</label>
-                            <textarea class="form-control" placeholder="Your description" name="contact_description" id="contact_description"></textarea>
+                            <textarea style="margin-top: 15px" class="form-control" placeholder="Description" name="contact_description" id="contact_description"></textarea>
                         </div>
                   
                           <button type="submit" class="cform-btn">
@@ -82,7 +78,7 @@
                       </div>
                   </div>
                   <div class="col-12 col-md-6">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497933.70259365474!2d77.6864446!3d12.8363584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6db33296d633%3A0x335dd63bf6d65b!2sSV%20GRANDUR%20-%20Apartments%20in%20Electronic%20City!5e0!3m2!1sen!2sin!4v1640091599796!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      
                   </div>
               </div>
           </div>
