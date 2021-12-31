@@ -84,7 +84,7 @@
                             </div>
                             <input type="hidden" name="homeRecaptcha" id="homeRecaptcha" value="">
 
-                            <button class="form-btn" type="submit" value="Submit">
+                            <button id="explornow_submitbtn" class="form-btn" type="submit" value="Submit">
                                 Explore Now
                                 <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <div class="iframe-container">
-                              <iframe src="https://www.youtube.com/embed/HZCNTnleLRW?rel=0" allowfullscreen></iframe>
+                              <iframe src="https://www.youtube.com/embed/HZCNTnIeLRw?rel=0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col d-flex align-items-center">

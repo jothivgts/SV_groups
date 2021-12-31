@@ -41,24 +41,21 @@
                            ></textarea>
 
                             <p>Floor plan</p>
-                            <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">
-                            <label for="2bhk">2BHK</label>
-
-                            <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">
-                            <label for="3bhk">3BHK</label><br>
+                            <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">2BHK
+                            <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">3BHK
 
                            <div 
                            class="g-recaptcha"
                            data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
                            data-callback="floorplanRecaptcha"
                            >
-                            </div>
-                            <input type="hidden" name="floorplanRecaptcha" id="floorplanRecaptcha" value="">
+                        </div>
+                        <input type="hidden" name="floorplanRecaptcha" id="floorplanRecaptcha" value="">
 
 
-                        <div  css="modalformcustomfooter">
+                        <div css="modalformcustomfooter">
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
-                        <button  type="submit"  class="btn btn-outline-warning" style="margin-">submit</button>
+                        <button  type="submit" id="floorplan_submitbtn" class="btn btn-outline-warning" style="">submit</button>
                         </div>
                        
                         </form> 

@@ -33,7 +33,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port       = 465;
 
 //Recipients
-$mail->addAddress('nesanoctact@gmail.com', 'nesamani');
+// $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
 $mail->addAddress('k3sha7@gmail.com', 'keshav');
 $mail->SetFrom('fromgmail@gmail.com', 'SV Groups');                                
 $mail->Subject = 'Here is the subject';

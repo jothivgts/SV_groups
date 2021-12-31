@@ -18,10 +18,10 @@ $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=
 $data = file_get_contents($url);
 $row = json_decode($data, true);
 //HTTP Request parse start
-$name = $_REQUEST['yourname'];
-$mobile = $_REQUEST['mobilenumber'];
-$email = $_REQUEST['emailaddress'];
-$content = $_REQUEST['description'];
+$name = $_REQUEST['floorplan_yourname'];
+$mobile = $_REQUEST['floorplan_mobilenumber'];
+$email = $_REQUEST['floorplan_emailaddress'];
+$content = $_REQUEST['floorplan_description'];
 $type = $_REQUEST['type'];
 //HTTP Request parse end
 
@@ -34,7 +34,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port       = 465;
 
 //Recipients
-$mail->addAddress('nesanoctact@gmail.com', 'nesamani');
+// $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
 $mail->addAddress('k3sha7@gmail.com', 'keshav');
 $mail->SetFrom('fromgmail@gmail.com', 'SV Groups');                                
 $mail->Subject = 'Here is the subject';
@@ -59,7 +59,6 @@ $mail->Body=
 $mail->isHTML(true);
 $mail->send();
 echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
-
 } catch (Exception $e) {
 echo json_encode((object) ["sent" => false, "message" => $mail->ErrorInfo]);
 }

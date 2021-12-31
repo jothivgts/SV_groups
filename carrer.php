@@ -61,10 +61,17 @@
                       </select>
                   </div>
 
-                  <div class="form_group">
-                      <label for="resume" class="form-label">Attach Your Resume (PDF)</label><br>
-                        <input style="height:10px" class="form-control form-control-lg" id="resume" name="resume" type="file">
+                  <div class="form_group mt-3">
+                        <label for="resume" class="form-label">Attach Your Resume (PDF)</label><br>
+                        <input style="height:10px" class="form-control form-control-lg mt-0" id="resume" name="resume" type="file">
                   </div>
+
+                  <div 
+                    class="g-recaptcha" 
+                    data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
+                    data-callback="carrerRecaptcha">
+                  </div>
+                  <input type="hidden" name="carrerRecaptcha" id="carrerRecaptcha" value="">
           
                   <button type="submit" id="careerbtn" class="cform-btn">
                       Submit

@@ -185,7 +185,7 @@ $( "#enquiryform" ).validate({
   },  
   submitHandler: function(form){
     let yourname = $('#yourname').val();
-    let emailaddress = $('#mobilenumber').val();
+    let emailaddress = $('#emailaddress').val();
     let mobilenumber = $('#mobilenumber').val();
     let description = $('#description').val();
     let fordata = { yourname,emailaddress,mobilenumber,description };

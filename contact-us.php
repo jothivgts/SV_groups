@@ -19,10 +19,6 @@
     <?php include('./include/navigation.php');?>
     </header>
     <main>
-      <!-- banner -->
-      <!-- <section class="banner">
-        <h1>Contact Us</h1>
-      </section> -->
       <!-- info -->
         <div class="container cinfo">
             <div class="row">
@@ -45,44 +41,44 @@
             </div>
         </div>
       <!-- Form -->
-      <section id="contact-container">
+      <section id="form">
           <div class="container">
-              <div class="row">
-                  <div class="col-12 col-md-12">
-                      <div class="form-container">
-                            <form class="form_block" id="contactusform" name="contactusform">
-                          <div class="form-group">
-                              <input class="form-control" type="text" placeholder="Name" name="contact_yourname" id="contact_yourname">
-                          </div>
-                  
-                          <div class="form-group">
-                              <input class="form-control" type="number" placeholder="Contact Number" name="contact_mobilenumber" id="contact_mobilenumber">
-                          </div>
-                  
-                          <div class="form-group">
-                              <input class="form-control" type="text" placeholder="Email" name="contact_emailaddress" id="contact_emailaddress">
-                          </div>
-                  
-                        <div class="form-group">
-                            <textarea style="margin-top: 15px" class="form-control" placeholder="Description" name="contact_description" id="contact_description"></textarea>
-                        </div>
-                  
-                          <button type="submit" class="cform-btn">
-                              Submit
-                              <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z"></path>
-                              </svg>
-                          </button>
-                            </form>
-                      </div>
+              <div class="form-container">
+                    <form class="form_block" id="contactusform" name="contactusform">
+                  <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Name" name="contact_yourname" id="contact_yourname">
                   </div>
-                  <div class="col-12 col-md-6">
-                      
+          
+                  <div class="form-group">
+                      <input class="form-control" type="number" placeholder="Contact Number" name="contact_mobilenumber" id="contact_mobilenumber">
                   </div>
+          
+                  <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Email" name="contact_emailaddress"id="contact_emailaddress">
+                  </div>
+
+                  <div class="form-group">
+                        <textarea style="margin-top: 15px" class="form-control" placeholder="Description" name="contact_description" id="contact_description"></textarea>
+                  </div>
+
+                  <div 
+                    class="g-recaptcha" 
+                    data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
+                    data-callback="contactRecaptcha">
+                  </div>
+                  <input type="hidden" name="contactRecaptcha" id="contactRecaptcha" value="">
+          
+                  <button type="submit" id="contactbtn" class="cform-btn">
+                        Submit
+                        <svg class="arrow" width="18" height="10" viewBox="0 0 21 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z"></path>
+                        </svg>
+                  </button>
+                    </form>
               </div>
           </div>
       </section>
+
     </main>
 
     <?php include ('./include/footer.php'); ?>
