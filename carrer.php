@@ -16,10 +16,7 @@
 </head>
 
 
-  <body>
-
-
-
+<body>
 
     <header>
     <?php include('./include/navigation.php');?>
@@ -50,8 +47,7 @@
                   </div>
           
                   <div class="form-group">
-                      
-                      <select name="position" id="position">
+                      <select name="career_position" id="career_position">
                         <option value="" disabled selected>Select your option</option>
                         <option value="admin">Admin/HR</option>
                         <option value="accounts">Accounts</option>
@@ -66,11 +62,11 @@
                   </div>
 
                   <div class="form_group">
-                      <label for="resume" class="form-label">Attach Your Resume</label><br>
-                        <input style="height:10px" class="form-control form-control-lg" id="formFileLg" type="file">
-                    </div>
+                      <label for="resume" class="form-label">Attach Your Resume (PDF)</label><br>
+                        <input style="height:10px" class="form-control form-control-lg" id="resume" name="resume" type="file">
+                  </div>
           
-                  <button type="submit" class="cform-btn">
+                  <button type="submit" id="careerbtn" class="cform-btn">
                       Submit
                       <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
                           xmlns="http://www.w3.org/2000/svg">
