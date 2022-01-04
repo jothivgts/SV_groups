@@ -46,7 +46,7 @@ $CONTACT_ACTIVE = $file == "contact-us.php" ? 'active' : '';
                                         </g>
                                     </svg></span>
                             </button>
-                        </li>
+                        </li> -->
             </ul>
           </div>
         </div>

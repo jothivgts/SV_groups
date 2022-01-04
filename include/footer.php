@@ -16,7 +16,7 @@ include ('./include/modal/enquiryform.php');
                     </g>
                 </svg></span>
         </button>
-        <div id="contact" class="container-fluid footer-1">
+        <!-- <div  class="container-fluid footer-1">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -44,18 +44,18 @@ include ('./include/modal/enquiryform.php');
                 </div>
             </div>
 
-        </div>
-        <div class="container-fluid footer-2">
+        </div> -->
+        <div class="container-fluid footer-2" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4 ">
                         <h5>PHONE</h5>
                         <p>Head Office:<br> 080- 29505657</p>
-                        <p>Sale Office:<br> +91-9845001343, 9845001560,<br> 9845001792</p>
+                        <p>Sale Office:<br> +91-9845001343, 9845001560</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 ">
                         <h5>E-MAIL</h5>
-                        <p>admin@svgroups.in<br>www.svgroups.in</p>
+                        <p>admin@svgroups.in</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 ">
                         <div class="row">
@@ -122,7 +122,7 @@ include ('./include/modal/enquiryform.php');
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>copyright © 2021 SV Groups</p>
+                        <p class="text-center">copyright © 2021 SV Groups</p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,12 @@ require('../vendor/autoload.php');
 $mail = new PHPMailer(true);
 
 try {
-
+$secret = "6LeCkMUdAAAAAA3vk-nC3pgckTpLKRSJU1CE8rxa";
+$remoteip = $_SERVER['REMOTE_ADDR'];
+$response = $_POST['g-recaptcha-response'];
+$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
+$data = file_get_contents($url);
+$row = json_decode($data, true);
 //HTTP Request parse start
 $name = $_REQUEST['yourname'];
 $mobile = $_REQUEST['mobilenumber'];
@@ -28,27 +33,27 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->Port       = 465;
 
 //Recipients
-$mail->addAddress('nesanoctact@gmail.com', 'nesamani');
+// $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
 $mail->addAddress('k3sha7@gmail.com', 'keshav');
-$mail->SetFrom('fromgmail@gmail.com', 'Pricol Technologies');                                
+$mail->SetFrom('fromgmail@gmail.com', 'SV Groups');                                
 $mail->Subject = 'Here is the subject';
 $mail->Body=
-"<!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Document</title>
-</head>
-<body>
-Name : ".$name." <br/>
-Email : ".$email." <br/>
-Mobile : ".$mobile." <br/>
-Content : ".$content." <br/>
-</body>
-</html>
-";
+        "<!DOCTYPE html>
+        <html lang='en'>
+            <head>
+                <meta charset='UTF-8'>
+                <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                <title>Document</title>
+            </head>
+            <body>
+                Name    : ".$name."     <br/>
+                Email   : ".$email."    <br/>
+                Mobile  : ".$mobile."   <br/>
+                Content : ".$content."  <br/>
+            </body>
+        </html>
+        ";
 $mail->isHTML(true);
 $mail->send();
 echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);

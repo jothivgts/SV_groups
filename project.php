@@ -20,22 +20,22 @@
     </header>
     <main id="proj">
         <!-- banner -->
-        <section class="banner">
+        <!-- <section class="banner">
         <h1 class="pt-4 pt-xs-0">Projects</h1>
-        </section>
+        </section> -->
       <!-- about -->
       <section id="about ">
         <div class="container">
           <div class="about-1 pb-0">
               <div class="row">
                 <div class="iframe-container-about">
-                    <iframe src="https://www.youtube.com/embed/sSSb3dGCE-0?rel=0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/HZCNTnIeLRw?rel=0" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="row pt-5">
                       <div class="info">
-                          <h4>SV GANDUR</h4>
-                          <h3>Apartments in Electronic City</h3>
+                      <h4><b>SV GANDUR</b></h4>
+                                <h5>Apartments in Electronic City</h5>
                           <p class="mb-4">SV GRANDUR offers a various choice of beautifully appointed 2 BHK and 3BHK
                               apartments. We
                               focus mainly on long term durability and lasting style without Common Walls. A

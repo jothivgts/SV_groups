@@ -36,7 +36,7 @@
     </div>
 
         <div id="showcase">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100 img-fluid" src="images/Frame 99.jpg" alt="img">
@@ -62,23 +62,19 @@
                     <!-- form -->
                     <form class="form_block" id="exploreform" name="exploreform">
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="explore_yourname">Name *</label>
-                            <input class="form-control" type="text" placeholder="Leslie Alexander" name="explore_yourname" id="explore_yourname">
+                            <input class="form-control" type="text" placeholder="Name" name="explore_yourname" id="explore_yourname">
                         <!-- </div> -->
 
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="number">Contact Number *</label>
-                            <input class="form-control" type="number" placeholder="99808 78654" name="explore_mobilenumber" id="explore_mobilenumber">
+                            <input class="form-control" type="number" placeholder="Contact Number" name="explore_mobilenumber" id="explore_mobilenumber">
                         <!-- </div> -->
 
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="email">Email *</label>
-                            <input class="form-control" type="text" placeholder="example@mail.com" name="explore_emailaddress" id="explore_emailaddress" >
+                            <input class="form-control" type="text" placeholder="Email" name="explore_emailaddress" id="explore_emailaddress" >
                         <!-- </div> -->
 
                         <!-- <div class="form-group"> -->
-                            <label class="form-label" for="description">Description *</label>
-                            <textarea class="form-control" placeholder="Your description" name="explore_description" id="explore_description"></textarea>
+                            <textarea class="form-control" placeholder="Description" name="explore_description" id="explore_description"></textarea>
                         <!-- </div> -->
 
                             <div 
@@ -88,7 +84,7 @@
                             </div>
                             <input type="hidden" name="homeRecaptcha" id="homeRecaptcha" value="">
 
-                            <button class="form-btn" type="submit" value="Submit">
+                            <button id="explornow_submitbtn" class="form-btn" type="submit" value="Submit">
                                 Explore Now
                                 <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -107,14 +103,14 @@
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <div class="iframe-container">
-                              <iframe src="https://www.youtube.com/embed/sSSb3dGCE-0?rel=0" allowfullscreen></iframe>
+                              <iframe src="https://www.youtube.com/embed/HZCNTnIeLRw?rel=0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col d-flex align-items-center">
                             <div class="content">
                                 <div class="scroll">
-                                <h4>SV GANDUR</h4>
-                                <h3>Apartments in Electronic City</h3>
+                                <h4><b>SV GANDUR</b></h4>
+                                <h5>Apartments in Electronic City</h5>
                                     <p>SV GRANDUR offers a various choice of beautifully appointed 2 BHK and 3BHK apartments. We focus mainly on long term durability and lasting style without Common Walls. A defined unique formwork is utilized for the project as resulting in the strengthened building structure, accurate in dimensions, with high tolerances and quality of a finished concrete surface.</p>
                                     <p>Built with 100% Concrete Walls and significantly architected for 82% of open space. It is well ventilated with natural light & air, as there is no multi-storey buildings nearby. Ventilation of each flat maximize the breathtaking vistas.</p>
                                     <p>Curtains of glass around you will achieve a wonderful sense of space and light. Ease yourself into a resort-style of community where every corner is created to accommodate a delightful living experience. The nearby METRO STATION saves your time of travel and makes you spend more time with your beloved. Every detail has been carefully considered and designed with privacy, safety, and beauty in mind.</p>
@@ -217,10 +213,9 @@
                 </div>
 
                 <div class="about-3 text-center">
-                    <h4>WHO ARE WE</h4>
+                    <!-- <h4>WHO ARE WE</h4> -->
                     <h3>Why Choose Us</h3>
-                    <p>SV Housing, with in the realty industry, was
-                        established with the prime focus of developing next generation Residential and Commercial
+                    <p> The prime focus of developing next generation Residential and Commercial
                         spaces.
                         Promoted by a team that has more than 3 decades of experience in the realty business.</p>
                     <ul class="list_block">
@@ -327,9 +322,9 @@
         <section id="carrer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <h1>Our Ventures</h1>
-                        <div class="accordion" id="accordionExample">
+                    <div class="col-12">
+                        <h1 class="text-center">Our Ventures</h1>
+                        <!-- <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -398,10 +393,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-12 col-md-6 side_block_container">
-                            <div class="side_block mb-3">
+                            <div class="side_block">
                                 <div>
                                     <h3>SV Housing</h3>
                                     <p>SV Housing, with in the realty industry, was established with the prime focus of developing next generation ...</p>
@@ -417,7 +412,10 @@
                                     <img src="images/Frame 116.jpg" alt="img">
                                 </div>
                             </div>
-                            <div class="side_block">
+                            
+                    </div>
+                    <div class="col-12 col-md-6 side_block_container">
+                    <div class="side_block">
                                 <div>
                                     <h3>AATHAVA Food Products</h3>
                                     <p>Aathava Food Products Pvt Ltd is the leading manufacturer and distributor of mango pulp and guava pulp....</p>

@@ -41,34 +41,25 @@ $( "#exploreform" ).validate({
       }
     },  
     submitHandler: function(form){
-      let explore_yourname = $('#explore_yourname').val();
-      let explore_emailaddress = $('#explore_emailaddress').val();
-      let explore_mobilenumber = $('#explore_mobilenumber').val();
-      let explore_description = $('#explore_description').val();
-  
-      let fordata = { explore_yourname,explore_emailaddress,explore_mobilenumber,explore_description };
+      let yourname = $('#explore_yourname').val();
+      let emailaddress = $('#explore_emailaddress').val();
+      let mobilenumber = $('#explore_mobilenumber').val();
+      let description = $('#explore_description').val();
+      let fordata = { yourname, emailaddress, mobilenumber, description };
       
-      console.log(fordata);
-
-      // $.ajax({
-      //   // type: 'post',
-      //   url: 'backend/sendmailpost.php',
-      //   data: fordata,
-      //   success: function(data)
-      //   {
-      //       alert(data); 
-      //   }
-      // });
-
-      $.get("backend/sendmail.php",fordata,function(data, status)
-      {
-        // alert("Form submited" + data);
-        alert("Data: " + data + "\nStatus: " + status);
+      //Button load
+      document.getElementById("explornow_submitbtn").disabled = true;
+      document.getElementById("explornow_submitbtn").innerHTML = "Loading ..."; 
+      
+      $.get("backend/enquirymail.php",fordata,function(data, status){
+        //After mail sent
+        document.getElementById("exploreform").reset();
+        document.getElementById("explornow_submitbtn").disabled = false;
+        document.getElementById("explornow_submitbtn").innerHTML = "Submit"; 
       });
-  
     }
   });
-  
+
   function homeRecaptcha(callbackvalue) {
     document.getElementById("homeRecaptcha").value = callbackvalue;
   };
@@ -125,54 +116,43 @@ $( "#exploreform" ).validate({
     submitHandler: function(form){
 
       let floorplan_yourname = $('#floorplan_yourname').val();
-      let floorplan_emailaddress = $('#floorplan_mobilenumber').val();
+      let floorplan_emailaddress = $('#floorplan_emailaddress').val();
       let floorplan_mobilenumber = $('#floorplan_mobilenumber').val();
       let floorplan_description = $('#floorplan_description').val();
-      let floorplan = $('#floorplan').val();
+      let twobhk = document.getElementById('2bhk').checked;
+      let type
+      if(twobhk) { type = "2bhk" } else { type = "3bhk"}
 
-
-      let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description , floorplan };
       
+      let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description,type };
+      
+      let bhk2 = ['../../sv/asset/2BHK.zip'];
+      let bhk3 = ['../../sv/asset/3BHK.zip'];
 
-      let bhk2 = ['../../svgroups/asset/t2.jpg','../../svgroups/asset/t5.jpg'];
-      let bhk3 = ['../../svgroups/asset/t1.jpg','../../svgroups/asset/t3.jpg','../../svgroups/asset/t4.jpg','../../svgroups/asset/t6.jpg'];
-
-      if(floorplan === '2bhk'){
-        bhk2.forEach(filepath => {
-          window.open(filepath, "_blank");
-        });
-
-        bhk2.forEach(filepath => {
-        let link = document.createElement('a');
-        link.href = filepath;
-        link.download = filepath;
-        link.dispatchEvent(new MouseEvent('click'));
-        });
-
-      }else{
-        bhk3.forEach(filepath => {
-          window.open(filepath, "_blank");
-        });
-
-        bhk3.forEach(filepath => {
-        let link = document.createElement('a');
-        link.href = filepath;
-        link.download = filepath;
-        link.dispatchEvent(new MouseEvent('click'));
-        });
+      //Button load
+      document.getElementById("floorplan_submitbtn").disabled = true;
+      document.getElementById("floorplan_submitbtn").innerHTML = "Loading ..."; 
+      $.get("backend/floorplanmail.php",fordata,function(data, status){
+        //After mail sent
+        if(twobhk) {
+          window.open(bhk2, "_blank");
+          let link = document.createElement('a');
+          link.href = bhk2;
+          link.download = "2bhk.zip";
+          link.dispatchEvent(new MouseEvent('click'));
+      } else {
+          window.open(bhk3, "_blank");
+          let link = document.createElement('a');
+          link.href = bhk3;
+          link.download = "3bhk.zip";
+          link.dispatchEvent(new MouseEvent('click'));
       }
-      
-
-
-
-      $.get("backend/enquirymail.php",fordata,function(data, status){
-        // alert("Data: " + data + "\nStatus: " + status);
-        alert('form submited');
+        $('#floorplanform-modal').modal('toggle');
+        document.getElementById("floorplanform").reset();
+        document.getElementById("floorplan_submitbtn").disabled = false;
+        document.getElementById("floorplan_submitbtn").innerHTML = "Submit"; 
       });
-
-
-  
-    }
+      }
   });
   
   function floorplanRecaptcha(callbackvalue) {
@@ -230,30 +210,29 @@ $( "#broucherform" ).validate({
   },  
   submitHandler: function(form){
 
-    let broucherform_yourname = $('#broucherform_yourname').val();
-    let broucherform_emailaddress = $('#broucherform_mobilenumber').val();
-    let broucherform_mobilenumber = $('#broucherform_mobilenumber').val();
-    let broucherform_description = $('#broucherform_description').val();
+    let yourname = $('#broucherform_yourname').val();
+    let emailaddress = $('#broucherform_emailaddress').val();
+    let mobilenumber = $('#broucherform_mobilenumber').val();
+    let description = $('#broucherform_description').val();
 
-    let fordata = { broucherform_yourname,broucherform_emailaddress,broucherform_mobilenumber,broucherform_description  };
-    
-   
-          let filepath = '../../svgroups/asset/broucherform/sample.pdf';
-          window.open(filepath, "_blank");
-          let link = document.createElement('a');
-          link.href = filepath;
-          link.download = filepath;
-          link.dispatchEvent(new MouseEvent('click'));
+    let fordata = { yourname,emailaddress,mobilenumber,description  };
       
+    //Button load
+    document.getElementById("broucher_submitbtn").disabled = true;
+    document.getElementById("broucher_submitbtn").innerHTML = "Loading ..."; 
+    $.get("backend/brouchermail.php",fordata,function(data, status){
+      //After mail sent
+      let filepath = '../../sv/asset/brochure.pdf';
+      let link = document.createElement('a');
+      link.href = filepath;
+      link.download = "brochure.pdf";
+      link.dispatchEvent(new MouseEvent('click'));
 
-
-    $.get("backend/enquirymail.php",fordata,function(data, status){
-      // alert("Data: " + data + "\nStatus: " + status);
-      alert('Form submited');
+      $('#broucherform-modal').modal('toggle');
+      document.getElementById("broucherform").reset();
+      document.getElementById("broucher_submitbtn").disabled = false;
+      document.getElementById("broucher_submitbtn").innerHTML = "Submit"; 
     });
-
-
-
   }
 });
 
@@ -274,7 +253,7 @@ function broucherformRecaptcha(callbackvalue) {
       
       masterPlanopenBtn.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = "./images/img.jpg";
+        modalImg.src = "./asset/masterplan.jpg";
       }
 
       // Get the <span> element that closes the modal

@@ -23,34 +23,32 @@
     </header>
     <main>
       <!-- banner -->
-      <section class="banner">
+      <!-- <section class="banner">
         <h1>Career</h1>
-      </section>
+      </section> -->
       <!-- Form -->
 
 
       <section id="form">
           <div class="container">
               <div class="form-container">
-                    <form class="form_block" id="careerform" name="careerform" >
+                    <form class="form_block" id="careerform" name="careerform">
                   <div class="form-group">
-                      <label class="form-label" for="career_yourname">Name *</label>
-                      <input class="form-control" type="text" placeholder="Leslie Alexander" name="career_yourname" id="career_yourname">
+                      
+                      <input class="form-control" type="text" placeholder="Name" name="career_yourname" id="career_yourname">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="number">Contact Number *</label>
-                      <input class="form-control" type="number" placeholder="99808 78654" name="career_mobilenumber" id="career_mobilenumber">
+                      <input class="form-control" type="number" placeholder="Contact Number" name="career_mobilenumber" id="career_mobilenumber">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="career_emailaddress">Email *</label>
-                      <input class="form-control" type="text" placeholder="example@mail.com" name="career_emailaddress"id="career_emailaddress">
+                      <input class="form-control" type="text" placeholder="Email" name="career_emailaddress"id="career_emailaddress">
                   </div>
           
                   <div class="form-group">
-                      <label class="form-label" for="career_position">Position</label>
                       <select name="career_position" id="career_position">
+                        <option value="" disabled selected>Select your option</option>
                         <option value="admin">Admin/HR</option>
                         <option value="accounts">Accounts</option>
                         <option value="architect">Architect</option>
@@ -63,10 +61,17 @@
                       </select>
                   </div>
 
-                  <div class="form_group">
-                      <label for="resume" class="form-label">Attach Your Resume (PDF)</label><br>
-                        <input style="height:10px" class="form-control form-control-lg" id="resume" name="resume" type="file">
+                  <div class="form_group mt-3">
+                        <label for="resume" class="form-label">Attach Your Resume (PDF)</label><br>
+                        <input style="height:10px" class="form-control form-control-lg mt-0" id="resume" name="resume" type="file">
                   </div>
+
+                  <div 
+                    class="g-recaptcha" 
+                    data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
+                    data-callback="carrerRecaptcha">
+                  </div>
+                  <input type="hidden" name="carrerRecaptcha" id="carrerRecaptcha" value="">
           
                   <button type="submit" id="careerbtn" class="cform-btn">
                       Submit

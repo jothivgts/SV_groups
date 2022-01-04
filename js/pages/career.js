@@ -82,6 +82,4 @@ $("#careerform").submit(function(e) {
         alert('File has been sent');
       }
   });
-
-
   }
