@@ -1781,3 +1781,7 @@ select {
 }
 
 /* Home page lightbox */
+
+#navmenu a.active {
+  border-bottom: 4px solid #0c0f96;
+}
