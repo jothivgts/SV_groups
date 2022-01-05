@@ -109,8 +109,8 @@
                         <div class="col d-flex align-items-center">
                             <div class="content">
                                 <div class="scroll">
-                                <h4><b>SV GANDUR</b></h4>
-                                <h5>Apartments in Electronic City</h5>
+                                <h3><b>SV GRANDUR</b></h3>
+                                <h4>Apartments in Electronic City</h4>
                                     <p>SV GRANDUR offers a various choice of beautifully appointed 2 BHK and 3BHK apartments. We focus mainly on long term durability and lasting style without Common Walls. A defined unique formwork is utilized for the project as resulting in the strengthened building structure, accurate in dimensions, with high tolerances and quality of a finished concrete surface.</p>
                                     <p>Built with 100% Concrete Walls and significantly architected for 82% of open space. It is well ventilated with natural light & air, as there is no multi-storey buildings nearby. Ventilation of each flat maximize the breathtaking vistas.</p>
                                     <p>Curtains of glass around you will achieve a wonderful sense of space and light. Ease yourself into a resort-style of community where every corner is created to accommodate a delightful living experience. The nearby METRO STATION saves your time of travel and makes you spend more time with your beloved. Every detail has been carefully considered and designed with privacy, safety, and beauty in mind.</p>
@@ -213,7 +213,6 @@
                 </div>
 
                 <div class="about-3 text-center">
-                    <!-- <h4>WHO ARE WE</h4> -->
                     <h3>Why Choose Us</h3>
                     <p> The prime focus of developing next generation Residential and Commercial
                         spaces.
@@ -324,76 +323,6 @@
                 <div class="row">
                     <div class="col-12">
                         <h1 class="text-center">Our Ventures</h1>
-                        <!-- <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Introductions
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p> A prominent Construction Company since 1987. SV GROUPS has marked its presence
-                                        in
-                                        premium urban scales and has rooted itself as a reputed Construction Company.
-                                        Maintaining high standards by striking a balance between quality, finesse and
-                                        has
-                                        successful executed many residential and commercial projects. SV GROUPS is
-                                        committed
-                                        to explore new areas and dimensions in infrastructure development.</p>
-                                        <p>SV GROUPS has grown swiftly to become one of the leading  Property Developers, helping shape skyline across the Residential, Commercial, Retail, Leisure & Hospitality sectors.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Profile
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>SV GROUPS is active in the development of key sectors such as infrastructure and energy, committing to the social and economic progress of  the country.</p> 
-                                        <p>Excellence is the foundation of our mission to build sustainable environments that enhance people’s lives by enabling the right people to capitalise on state-of-the-art knowledge, resources and digital technologies, providing solutions across the total construction life cycle.</p> 
-                                        <p> We are passionate about harnessing innovation as a positive force for change and we instil this mindset culturally in every element of our operations for project delivery.</p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Quality Management System
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        ‘Quality Management System’ is a repository of processes and systems, which deﬁne all activities at SV GROUPS. The QMS ensures delivery of a quality product at optimum cost and minimum impact to the environment and society at large. QMS training is mandatory for all employees; upon qualiﬁcation they are QMS certiﬁed.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                        Project Review Management
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        ‘Project Review Management’ is a monthly review process for ongoing projects. PICs (project-in-charge) prepare a progress report benchmarked against international best practices including project progress, project cost report, project inventory and project risks. Senior management presence at these forums enables quick resolution of project issues and provides impetus for speedy execution. The PRM rates all PPL projects on key parameters of progress, schedule, cost, quality, safety and housekeeping. Outstanding projects receive a commendation every month; best-in-class projects are awarded every quarter.
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="col-12 col-md-6 side_block_container">
                             <div class="side_block">

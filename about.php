@@ -27,9 +27,9 @@
       <section id="history">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
-              <div class="col-md-6">
+              <div class="col-lg-6 col-12">
                 <h3>OUR HISTORY</h3>
-                <h2 class="mb-sm-5 mb-4">Quality & Passion With Our Services</h2>
+                <h2 class="mb-sm-5">Quality & Passion With Our Services</h2>
                 <h4 class="mb-2">Departure performed exquisite</h4>
                 <p class="mb-3 ">
                   SV GROUPS is active in the development of key sectors such as
