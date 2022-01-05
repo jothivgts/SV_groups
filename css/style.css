@@ -104,16 +104,13 @@ nav {
   line-height: 21px;
 }
 
-#navmenu li:last-child {
-  margin-right: 0;
-}
-
-/* #navmenu li:last-child a {
-  padding: 10px 30px;
+/* #navmenu li:last-child {
+  margin-left: 30px;
 } */
-#navmenu li:nth-child(5) {
+
+/* #navmenu li:nth-child(5) {
   margin-right: 0px;
-}
+} */
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -425,6 +422,7 @@ select {
 }
 
 .content p {
+  font-size: 15px;
   padding-bottom: 10px;
 }
 
@@ -1009,14 +1007,6 @@ select {
     line-height: 21px;
   }
 
-  #navmenu li:last-child {
-    margin-right: 0;
-  }
-
-  /* #navmenu li:last-child a {
-    padding: 10px 25px;
-  } */
-
   #navmenu li:nth-child(5) {
     margin-right: 0px;
   }
@@ -1124,6 +1114,11 @@ select {
       background-color: white;
     }
 
+    /* #navmenu li:last-child {
+      margin: 0;
+      margin-top: 20px;
+    } */
+
     .ani-b {
       padding: 10px 20px !important;
       margin-bottom: 12px;
@@ -1148,6 +1143,9 @@ select {
     .navbar-brand img {
       height: 35px;
     }
+    .history-img {
+      margin-left: 0;
+    }
   }
 
   @media (max-width: 576px) {
@@ -1167,9 +1165,6 @@ select {
       font-size: 40px;
       font-weight: 700;
       position: absolute;
-      /* top: 50%;
-      left: 50%;
-      transform: translate(-50%, -20%); */
     }
 
     .iframe-container-about iframe {
@@ -1783,5 +1778,5 @@ select {
 /* Home page lightbox */
 
 #navmenu a.active {
-  border-bottom: 4px solid #0c0f96;
+  border-bottom: 4px solid #2f3f59;
 }
