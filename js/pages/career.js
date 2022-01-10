@@ -67,6 +67,7 @@ $("#careerform").submit(function(e) {
 
     //Button load
     document.getElementById("careerbtn").disabled = true;
+    document.getElementById("explornow_submitbtn").innerHTML = "Loading ..."; 
     
      $.ajax({
       url: 'backend/career.php',
@@ -79,7 +80,7 @@ $("#careerform").submit(function(e) {
       success: function(data){
         document.getElementById("careerform").reset();
         document.getElementById("careerbtn").disabled = false;
-        alert('File has been sent');
+        alert('Form Submited');
       }
   });
   }
