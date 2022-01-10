@@ -37,7 +37,7 @@ $mail->Port       = 465;
 // $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
 $mail->addAddress('k3sha7@gmail.com', 'keshav');
 $mail->SetFrom('fromgmail@gmail.com', 'SV Groups');                                
-$mail->Subject = 'Here is the subject';
+$mail->Subject = 'Enquiry for site';
 $mail->Body=
         "<!DOCTYPE html>
         <html lang='en'>

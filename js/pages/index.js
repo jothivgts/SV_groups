@@ -53,6 +53,7 @@ $( "#exploreform" ).validate({
       
       $.get("backend/enquirymail.php",fordata,function(data, status){
         //After mail sent
+        alert("Form submited")
         document.getElementById("exploreform").reset();
         document.getElementById("explornow_submitbtn").disabled = false;
         document.getElementById("explornow_submitbtn").innerHTML = "Submit"; 
