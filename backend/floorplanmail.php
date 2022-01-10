@@ -6,6 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require('../vendor/autoload.php');
+include("./usernotificationmail.php");
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -58,6 +59,23 @@ $mail->Body=
         ";
 $mail->isHTML(true);
 $mail->send();
+
+$tobody = "<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Document</title>
+</head>
+<body>
+Thanks for your request.
+</body>
+</html>
+";
+
+userNotification($name,$email,$tobody);
+
 echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
 } catch (Exception $e) {
 echo json_encode((object) ["sent" => false, "message" => $mail->ErrorInfo]);
