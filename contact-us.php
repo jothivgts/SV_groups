@@ -25,7 +25,7 @@
                 <div class="col-12 col-sm-6 col-md-4 ">
                     <h5>PHONE</h5>
                     <p>Head Office:<br> 080- 29505657</p>
-                    <p>Sale Office:<br> +91-9845001343, 9845001560</p>
+                    <p>Sales Office:<br> +91-9845001343, 9845001560</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 ">
                     <h5>E-MAIL</h5>
