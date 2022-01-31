@@ -127,8 +127,8 @@ $( "#exploreform" ).validate({
       
       let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description,type };
       
-      let bhk2 = ['./asset/2BHK.zip'];
-      let bhk3 = ['./asset/3BHK.zip'];
+      let bhk2 = './asset/2BHK.zip';
+      let bhk3 = './asset/3BHK.zip';
 
       //Button load
       document.getElementById("floorplan_submitbtn").disabled = true;
