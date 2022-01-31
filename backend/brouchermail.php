@@ -6,18 +6,14 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require('../vendor/autoload.php');
+include_once("./SMTPconfig.php");
 include("./usernotificationmail.php");
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
+$smtpconfig = new SMTPCONFIGURATION();
 
 try {
-$secret = "6LeCkMUdAAAAAA3vk-nC3pgckTpLKRSJU1CE8rxa";
-$remoteip = $_SERVER['REMOTE_ADDR'];
-$response = $_POST['g-recaptcha-response'];
-$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
-$data = file_get_contents($url);
-$row = json_decode($data, true);
 //HTTP Request parse start
 $name = $_REQUEST['yourname'];
 $mobile = $_REQUEST['mobilenumber'];
@@ -27,11 +23,11 @@ $content = $_REQUEST['description'];
 
 $mail->isSMTP(); 
 $mail->SMTPAuth   = true;                                 
-$mail->Host       = 'smtp.gmail.com';                     
-$mail->Username   = 'vgts.dev@gmail.com';                 
-$mail->Password   = 'vredpzyrhotllflu';                   
+$mail->Host       = $smtpconfig->Host;                     
+$mail->Username   = $smtpconfig->Username;                 
+$mail->Password   = $smtpconfig->Password;                   
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-$mail->Port       = 465;
+$mail->Port       = $smtpconfig->Port;
 
 //Recipients
 // $mail->addAddress('nesanoctact@gmail.com', 'nesamani');

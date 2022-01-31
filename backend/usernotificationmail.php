@@ -5,20 +5,21 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require('../vendor/autoload.php');
-
+include_once("./SMTPconfig.php");
 
 function userNotification($toname,$tomail,$tobody){
 
     $mail = new PHPMailer(true);
+    $smtpconfig = new SMTPCONFIGURATION();
 
     try {
     $mail->isSMTP(); 
     $mail->SMTPAuth   = true;                                 
-    $mail->Host       = 'smtp.gmail.com';                     
-    $mail->Username   = 'vgts.dev@gmail.com';                 
-    $mail->Password   = 'vredpzyrhotllflu';                   
+    $mail->Host       = $smtpconfig->Host;                     
+    $mail->Username   = $smtpconfig->Username;                 
+    $mail->Password   = $smtpconfig->Password;                   
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-    $mail->Port       = 465;
+    $mail->Port       = $smtpconfig->Port;
 
     //Recipients
     // $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
