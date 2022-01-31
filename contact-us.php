@@ -20,6 +20,9 @@
     </header>
     <main>
       <!-- info -->
+      <section class="banner">
+        <h1 class="text-center mt-5"> Contact Us</h1>
+      </section>
         <div class="container cinfo">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 ">

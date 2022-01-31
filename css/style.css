@@ -282,21 +282,9 @@ select {
   font-size: 14px;
 }
 
-.banner {
-  position: relative;
-  background-color: #3c4f6e;
-  color: white;
-  height: 380px;
-  /* margin-top: 87px; */
-}
-
 .banner h1 {
   font-size: 60px;
   font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .form-container {

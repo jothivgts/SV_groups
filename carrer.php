@@ -23,9 +23,9 @@
     </header>
     <main>
       <!-- banner -->
-      <!-- <section class="banner">
-        <h1>Career</h1>
-      </section> -->
+      <section class="banner">
+        <h1 class="text-center mt-5"> Career</h1>
+      </section>
       <!-- Form -->
 
 
