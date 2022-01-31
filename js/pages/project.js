@@ -58,8 +58,8 @@ $( "#floorplanform" ).validate({
     
     let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description,type };
     
-    let bhk2 = ['../../asset/2BHK.zip'];
-    let bhk3 = ['../../asset/3BHK.zip'];
+    let bhk2 = ['./asset/2BHK.zip'];
+    let bhk3 = ['./asset/3BHK.zip'];
 
     //Button load
     document.getElementById("floorplan_submitbtn").disabled = true;
@@ -92,9 +92,6 @@ function floorplanRecaptcha(callbackvalue) {
 };
 
 // Floor plan form end
-
-
-
 
 //  Broucher form start
 
@@ -154,7 +151,7 @@ submitHandler: function(form){
   document.getElementById("broucher_submitbtn").innerHTML = "Loading ..."; 
   $.get("backend/brouchermail.php",fordata,function(data, status){
     //After mail sent
-    let filepath = '../../asset/brochure.pdf';
+    let filepath = './asset/brochure.pdf';
     let link = document.createElement('a');
     link.href = filepath;
     link.download = "brochure.pdf";
