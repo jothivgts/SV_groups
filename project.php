@@ -19,6 +19,9 @@
     <?php include('./include/navigation.php');?>
     </header>
 
+    <?php include('./include/modal/floorplanform.php');?>
+    <?php include('./include/modal/broucherform.php');?>
+    
         <!-- lightbox -->
         <div id="masterPlanlightmodal" class="lightbox-modal">
     <span class="lightboxclose">&times;</span>
