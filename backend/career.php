@@ -12,12 +12,6 @@ include("./usernotificationmail.php");
 $mail = new PHPMailer(true);
 
 try {
-$secret = "6LeCkMUdAAAAAA3vk-nC3pgckTpLKRSJU1CE8rxa";
-$remoteip = $_SERVER['REMOTE_ADDR'];
-$response = $_POST['g-recaptcha-response'];
-$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
-$data = file_get_contents($url);
-$row = json_decode($data, true);
 //HTTP Request parse start
 $name = $_REQUEST['career_yourname'];
 $mobile = $_REQUEST['career_mobilenumber'];
