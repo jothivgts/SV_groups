@@ -1,0 +1,20 @@
+FORM PAGES IN SV GROUPS
+    1)career.php - career form
+    2)contact-us.php - contact us form
+    3)index.php - main form
+    4)broucherform.php - broucherform
+    5)enquiryform.php - enquiryform
+    6)floorplanform.php - floorplan form
+
+    Verification form
+    1)mobileverfication.php - verify otp
+
+
+
+PRESS SUBMIT OTP
+    1)Otp has been sent to user.
+    2)User modal popup form.
+    3)Enter otp.
+    4)Otp validation done by 2factor.
+    5)Form submittion in background.
+    if form submitted notifies user.if not notifies user.
