@@ -4,7 +4,8 @@ $( "#floorplanform" ).validate({
   ignore: ".ignore",
   rules: {
     floorplan_yourname: {
-      required: true
+      required: true,
+      minlength: 3,
     },floorplan_emailaddress: {
       required: true,
       email : true,
@@ -18,6 +19,7 @@ $( "#floorplanform" ).validate({
     },
     floorplan_description:{
       required: true,
+      minlength: 3,
     },
     floorplan: { 
       required: true
@@ -29,7 +31,10 @@ $( "#floorplanform" ).validate({
     }
   },
   messages: {
-    floorplan_yourname: "Kindly enter your name",
+    floorplan_yourname: {
+      required: "Kindly enter your name",
+      minlength: "Minimum 3 characters",
+    },
     floorplan_emailaddress: {
       required: "Kindly enter your email address",
       email: "Enter valid format"
@@ -41,8 +46,9 @@ $( "#floorplanform" ).validate({
           minlength: "Enter valid mobile number",
           maxlength: "Enter valid mobile number"
     },
-    floorplan_description : {
+    floorplan_description: {
       required: "Kindly enter description",
+      minlength: "Minimum 3 characters",
     }
   },  
   submitHandler: function(form){
@@ -99,7 +105,8 @@ $( "#broucherform" ).validate({
 ignore: ".ignore",
 rules: {
   broucherform_yourname: {
-    required: true
+    required: true,
+    minlength: 3,
   },broucherform_emailaddress: {
     required: true,
     email : true,
@@ -113,6 +120,7 @@ rules: {
   },
   broucherform_description:{
     required: true,
+      minlength: 3,
   },
   broucherformRecaptcha: {
     required: function () {
@@ -121,7 +129,10 @@ rules: {
   }
 },
 messages: {
-  broucherform_yourname: "Kindly enter your name",
+  broucherform_yourname: {
+    required: "Kindly enter your name",
+    minlength: "Minimum 3 characters",
+  },
   broucherform_emailaddress: {
     required: "Kindly enter your email address",
     email: "Enter valid format"
@@ -133,8 +144,9 @@ messages: {
         minlength: "Enter valid mobile number",
         maxlength: "Enter valid mobile number"
   },
-  broucherform_description : {
+  broucherform_description:{
     required: "Kindly enter description",
+    minlength: "Minimum 3 characters",
   }
 },  
 submitHandler: function(form){
