@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
+  
 
 <body>
 
     <header>
     <?php include('./include/navigation.php');?>
     </header>
+    <?php include('./include/modal/mobileverification.php');?>
     <main>
       <!-- banner -->
       <section class="banner">
@@ -69,10 +70,11 @@
                   <div 
                     class="g-recaptcha" 
                     data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
-                    data-callback="carrerRecaptcha">
+                    data-callback="contactRecaptcha">
                   </div>
-                  <input type="hidden" name="carrerRecaptcha" id="carrerRecaptcha" value="">
-          
+                  <input type="hidden" name="contactRecaptcha" id="contactRecaptcha" value="">
+                  
+                  
                   <button type="submit" id="careerbtn" class="cform-btn">
                       Submit
                       <svg class="arrow" width="18" height="10" viewBox="0 0 21 12"

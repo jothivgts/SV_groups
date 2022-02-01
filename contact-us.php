@@ -18,6 +18,7 @@
   <header>
     <?php include('./include/navigation.php');?>
     </header>
+    <?php include('./include/modal/mobileverification.php');?>
     <main>
       <!-- info -->
       <section class="banner">
