@@ -20,6 +20,9 @@
     </header>
     <?php include('./include/modal/mobileverification.php');?>
     <main>
+
+      <h1 class="form-heading">Contact Us</h1>
+
       <!-- info -->
         <div class="container cinfo">
             <div class="row">
@@ -70,7 +73,7 @@
                   <input type="hidden" name="contactRecaptcha" id="contactRecaptcha" value="">
           
                   <button type="submit" id="contactbtn" class="cform-btn">
-                        Submit
+                        Explore Now
                         <svg class="arrow" width="18" height="10" viewBox="0 0 21 12" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z"></path>
                         </svg>
