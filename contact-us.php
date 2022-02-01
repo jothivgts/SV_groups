@@ -20,9 +20,6 @@
     </header>
     <?php include('./include/modal/mobileverification.php');?>
     <main>
-
-      <h1 class="form-heading">Contact Us</h1>
-
       <!-- info -->
       <section class="banner">
         <h1 class="text-center mt-5"> Contact Us</h1>
