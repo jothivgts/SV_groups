@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'cf095f096493b9caf3bc195ab3986af36d8a71b4',
+        'reference' => 'b45ab1fd568ef91de4b3e0940b3801b8fdf229c9',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,20 +16,8 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'cf095f096493b9caf3bc195ab3986af36d8a71b4',
+            'reference' => 'b45ab1fd568ef91de4b3e0940b3801b8fdf229c9',
             'dev_requirement' => false,
-        ),
-        'cordoval/hamcrest-php' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '*',
-            ),
-        ),
-        'davedevelopment/hamcrest-php' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '*',
-            ),
         ),
         'guzzlehttp/guzzle' => array(
             'pretty_version' => '7.4.1',
@@ -58,37 +46,13 @@
             'reference' => '089edd38f5b8abba6cb01567c2a8aaa47cec4c72',
             'dev_requirement' => false,
         ),
-        'hamcrest/hamcrest-php' => array(
-            'pretty_version' => 'v2.0.1',
-            'version' => '2.0.1.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../hamcrest/hamcrest-php',
-            'aliases' => array(),
-            'reference' => '8c3d0a3f6af734494ad8f6fbbee0ba92422859f3',
-            'dev_requirement' => false,
-        ),
-        'kodova/hamcrest-php' => array(
-            'dev_requirement' => false,
-            'replaced' => array(
-                0 => '*',
-            ),
-        ),
         'mailjet/mailjet-apiv3-php' => array(
-            'pretty_version' => 'v1.5.5',
-            'version' => '1.5.5.0',
+            'pretty_version' => 'v1.5.1',
+            'version' => '1.5.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../mailjet/mailjet-apiv3-php',
             'aliases' => array(),
-            'reference' => 'c1c1931c76ebd1adb5cf2a76f60ddcaa61849aa2',
-            'dev_requirement' => false,
-        ),
-        'mockery/mockery' => array(
-            'pretty_version' => '1.5.0',
-            'version' => '1.5.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../mockery/mockery',
-            'aliases' => array(),
-            'reference' => 'c10a5f6e06fc2470ab1822fa13fa2a7380f8fbac',
+            'reference' => '7b94fa629d46fa5ba3826ed4596674942944520d',
             'dev_requirement' => false,
         ),
         'phpmailer/phpmailer' => array(
