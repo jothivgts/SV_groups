@@ -28,7 +28,6 @@
         <div class="container py-5">
             <div class="row d-flex align-items-center">
               <div class="col-lg-6 col-12">
-                <h3>OUR HISTORY</h3>
                 <h2 class="mb-sm-5">Quality & Passion With Our Services</h2>
                 <h4 class="mb-2">Departure performed exquisite</h4>
                 <p class="mb-3 ">
@@ -154,22 +153,6 @@
                                     committed
                                     to explore new areas and dimensions in infrastructure development.</p>
                                     <p>SV GROUPS has grown swiftly to become one of the leading  Property Developers, helping shape skyline across the Residential, Commercial, Retail, Leisure & Hospitality sectors.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Profile
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>SV GROUPS is active in the development of key sectors such as infrastructure and energy, committing to the social and economic progress of  the country.</p> 
-                                    <p>Excellence is the foundation of our mission to build sustainable environments that enhance people’s lives by enabling the right people to capitalise on state-of-the-art knowledge, resources and digital technologies, providing solutions across the total construction life cycle.</p> 
-                                    <p> We are passionate about harnessing innovation as a positive force for change and we instil this mindset culturally in every element of our operations for project delivery.</p>    
                                 </div>
                             </div>
                         </div>
