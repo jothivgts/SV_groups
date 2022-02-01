@@ -47,7 +47,7 @@
                     <div class="carousel-item">
                         <img class="d-block w-100 img-fluid" src="images/Frame 101.jpg" alt="img">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                         data-bs-slide="prev">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-left" class="svg-inline--fa fa-arrow-circle-left fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           <path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm28.9-143.6L209.4 288H392c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24H209.4l75.5-72.4c9.7-9.3 9.9-24.8.4-34.3l-11-10.9c-9.4-9.4-24.6-9.4-33.9 0L107.7 239c-9.4 9.4 9.4 24.6 0 33.9l132.7 132.7c9.4 9.4 24.6 9.4 33.9 0l11-10.9c9.5-9.5 9.3-25-.4-34.3z"></path>
@@ -58,24 +58,16 @@
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-right" class="svg-inline--fa fa-arrow-circle-right fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           <path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"></path>
                         </svg>
-                    </button>
+                    </button> -->
                     <!-- form -->
-                    <form class="form_block" id="exploreform" name="exploreform">
-                        <!-- <div class="form-group"> -->
+                    <!-- <form class="form_block" id="exploreform" name="exploreform">
                             <input class="form-control" type="text" placeholder="Name" name="explore_yourname" id="explore_yourname">
-                        <!-- </div> -->
 
-                        <!-- <div class="form-group"> -->
                             <input class="form-control" type="number" placeholder="Contact Number" name="explore_mobilenumber" id="explore_mobilenumber">
-                        <!-- </div> -->
 
-                        <!-- <div class="form-group"> -->
                             <input class="form-control" type="text" placeholder="Email" name="explore_emailaddress" id="explore_emailaddress" >
-                        <!-- </div> -->
 
-                        <!-- <div class="form-group"> -->
                             <textarea class="form-control" placeholder="Description" name="explore_description" id="explore_description"></textarea>
-                        <!-- </div> -->
 
                             <div 
                                 class="g-recaptcha" 
@@ -91,7 +83,7 @@
                                     <path d="M15 6.75H0V5.25H15V0L21 6L15 12V6.75Z"></path>
                                 </svg>
                         </button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
 
@@ -225,7 +217,7 @@
                                     d="M8.4 18.6667H12V11.599L7.2 7.52967L2.4 11.599V18.6667H6V14H8.4V18.6667ZM22.8 21H1.2C0.88174 21 0.576515 20.8771 0.351472 20.6583C0.126428 20.4395 7.18444e-09 20.1428 7.18444e-09 19.8333V11.0682C-1.87545e-05 10.9015 0.0367091 10.7367 0.107709 10.585C0.178709 10.4332 0.282333 10.298 0.4116 10.1885L4.8 6.468V1.16667C4.8 0.857247 4.92643 0.560501 5.15147 0.341709C5.37652 0.122916 5.68174 0 6 0H22.8C23.1183 0 23.4235 0.122916 23.6485 0.341709C23.8736 0.560501 24 0.857247 24 1.16667V19.8333C24 20.1428 23.8736 20.4395 23.6485 20.6583C23.4235 20.8771 23.1183 21 22.8 21ZM16.8 9.33333V11.6667H19.2V9.33333H16.8ZM16.8 14V16.3333H19.2V14H16.8ZM16.8 4.66667V7H19.2V4.66667H16.8ZM12 4.66667V7H14.4V4.66667H12Z"
                                     fill="#3C4F6E" />
                             </svg>
-                            Proffessional Builder
+                            Professional Builder
                         </li>
                         <li>
                             <svg width="25" height="27" viewBox="0 0 25 27" fill="none"
@@ -243,7 +235,7 @@
                                     d="M4.8 4.8H19.2V19.2H4.8V4.8ZM4.8 0H7.2V3.6H4.8V0ZM4.8 20.4H7.2V24H4.8V20.4ZM0 4.8H3.6V7.2H0V4.8ZM0 16.8H3.6V19.2H0V16.8ZM20.4 4.8H24V7.2H20.4V4.8ZM20.4 16.8H24V19.2H20.4V16.8ZM16.8 0H19.2V3.6H16.8V0ZM16.8 20.4H19.2V24H16.8V20.4Z"
                                     fill="#3C4F6E" />
                             </svg>
-                            Vasthu Complatint
+                            Vasthu Complaint
                         </li>
                         <li>
                             <svg width="20" height="26" viewBox="0 0 20 26" fill="none"
@@ -368,7 +360,6 @@
         <!-- testimonials -->
         <section id="testimonials">
             <div class="testimonials container">
-                <h3>CLIENT SAYS <br><span>TESTIMONIALS</span></h3>
                 <div class=" owl-carousel owl-theme" id="second_slider">
                     <div class="item">
                         <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">

@@ -3,7 +3,8 @@ $( "#contactusform" ).validate({
     ignore: ".ignore",
     rules: {
       contact_yourname: {
-        required: true
+        required: true,
+        minlength: 3,
       },contact_emailaddress: {
         required: true,
         email : true,
@@ -15,8 +16,9 @@ $( "#contactusform" ).validate({
             minlength: 10,
             maxlength: 10
       },
-      contact_description:{
+      contact_description: {
         required: true,
+        minlength: 3,
       },
       contactRecaptcha: {
         required: function () {
@@ -25,20 +27,24 @@ $( "#contactusform" ).validate({
       }
     },
     messages: {
-      explore_yourname: "Kindly enter your name",
-      explore_emailaddress: {
+      contact_yourname: {
+        required: "Kindly enter your name",
+        minlength: "Minimum 3 characters",
+      },
+      contact_emailaddress: {
         required: "Kindly enter your email address",
         email: "Enter valid format"
       }
       ,
-      explore_mobilenumber: {
+      contact_mobilenumber: {
         required: "Kindly enter your mobile number",
         number: "Enter valid mobile number",
             minlength: "Enter valid mobile number",
             maxlength: "Enter valid mobile number"
       },
-      explore_description : {
+      contact_description: {
         required: "Kindly enter description",
+        minlength: "Minimum 3 characters",
       }
     },  
     submitHandler: function(){

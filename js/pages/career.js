@@ -5,7 +5,8 @@ $("#careerform").submit(function(e) {
     ignore: ".ignore",
     rules: {
       career_yourname: {
-        required: true
+        required: true,
+        minlength: 3,
       },career_emailaddress: {
         required: true,
         email : true,
@@ -31,7 +32,10 @@ $("#careerform").submit(function(e) {
       }
     },
     messages: {
-      career_yourname: "Kindly enter your name",
+      career_yourname: {
+        required: "Kindly enter your name",
+        minlength: "Minimum 3 characters",
+      },
       career_emailaddress: {
         required: "Kindly enter your email address",
         email: "Enter valid format"

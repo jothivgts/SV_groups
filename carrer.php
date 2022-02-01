@@ -24,13 +24,10 @@
     <?php include('./include/modal/mobileverification.php');?>
     <main>
       <!-- banner -->
-      <!-- <section class="banner">
-        <h1>Career</h1>
-      </section> -->
+      <section class="banner">
+        <h1 class="text-center mt-5"> Career</h1>
+      </section>
       <!-- Form -->
-
-
-      <h1 class="form-heading">Career</h1>
       <section id="form">
           <div class="container">
               <div class="form-container">
