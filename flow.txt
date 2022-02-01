@@ -1,0 +1,30 @@
+MAIL JET TEST CREDENTIAL
+
+    EMAIL : nesamani@friendswebsolution.com
+    PASS  : Mail@jet2022
+    USER NAME : 66aa8c5bb0d77c240d2e3d88b00bde39
+    PASSWORD : 88fe37dfa9d1151f279796d4cbb397e8
+    SERVER : in-v3.mailjet.com
+    Use TLS : optional
+    Port : 25 or 587 (some providers block port 25)
+
+FORM PAGES IN SV GROUPS
+    1)career.php - career form
+    2)contact-us.php - contact us form
+    3)index.php - main form
+    4)broucherform.php - broucherform
+    5)enquiryform.php - enquiryform
+    6)floorplanform.php - floorplan form
+
+    Verification form
+    1)mobileverfication.php - verify otp
+
+
+
+PRESS SUBMIT OTP
+    1)Otp has been sent to user.
+    2)User modal popup form.
+    3)Enter otp.
+    4)Otp validation done by 2factor.
+    5)Form submittion in background.
+    if form submitted notifies user.if not notifies user.

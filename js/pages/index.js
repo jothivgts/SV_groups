@@ -69,7 +69,7 @@ $( "#exploreform" ).validate({
 
 //  Floor plan form start
 
-  $( "#floorplanform" ).validate({
+  $("#floorplanform").validate({
     ignore: ".ignore",
     rules: {
       floorplan_yourname: {
@@ -127,8 +127,8 @@ $( "#exploreform" ).validate({
       
       let fordata = { floorplan_yourname,floorplan_emailaddress,floorplan_mobilenumber,floorplan_description,type };
       
-      let bhk2 = ['../../sv/asset/2BHK.zip'];
-      let bhk3 = ['../../sv/asset/3BHK.zip'];
+      let bhk2 = './asset/2BHK.zip';
+      let bhk3 = './asset/3BHK.zip';
 
       //Button load
       document.getElementById("floorplan_submitbtn").disabled = true;
@@ -223,7 +223,7 @@ $( "#broucherform" ).validate({
     document.getElementById("broucher_submitbtn").innerHTML = "Loading ..."; 
     $.get("backend/brouchermail.php",fordata,function(data, status){
       //After mail sent
-      let filepath = '../../sv/asset/brochure.pdf';
+      let filepath = './asset/brochure.pdf';
       let link = document.createElement('a');
       link.href = filepath;
       link.download = "brochure.pdf";
