@@ -23,6 +23,7 @@
                         <button type="button" id="submitotp" class="btn btn-outline-info mr-1" > SUBMIT OTP </button>
                         <button type="button" id="resendotp" class="btn btn-outline-success mr-1" > RESEND OTP </button>
                         <button type="button" id="cancelmobileverification" class="btn btn-outline-danger" > CANCEL </button>
+                        <button type="button" id="verification_btn" class="btn btn-outline-danger" > SUBMITTING ... </button>
                         </div>
                        
                         </form> 

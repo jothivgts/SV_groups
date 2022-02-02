@@ -48,6 +48,7 @@ $( "#contactusform" ).validate({
       }
     },  
     submitHandler: function(){
+      hideVerificationloadbtn();
       sendOtp();
     }
 });
@@ -159,10 +160,25 @@ function contactRecaptcha(contactRecaptcha) {
     });
   }
 
+  function showVerificationloadbtn(){
+    document.getElementById("submitotp").style.display = "none";
+    document.getElementById("resendotp").style.display = "none";
+    document.getElementById("cancelmobileverification").style.display = "none";
+    document.getElementById("verification_btn").style.display = "block";
+}
+
+function hideVerificationloadbtn(){
+    document.getElementById("submitotp").style.display = "block";
+    document.getElementById("resendotp").style.display = "block";
+    document.getElementById("cancelmobileverification").style.display = "block";
+    document.getElementById("verification_btn").style.display = "none";
+}
+
   function hideModal(){
     statuscode="";
     document.getElementById("otpnotification").innerHTML="";
     document.getElementById("otp_input").value="";
+    hideVerificationloadbtn();
     $('#mobileverfication-modal').modal('toggle');
   }
 
@@ -172,6 +188,9 @@ function contactRecaptcha(contactRecaptcha) {
   
   
   function callApicall() {
+    
+    showVerificationloadbtn();
+    
     let yourname = $('#contact_yourname').val();
     let mobilenumber = $('#contact_mobilenumber').val();
     let emailaddress = $('#contact_emailaddress').val();
@@ -194,6 +213,7 @@ function contactRecaptcha(contactRecaptcha) {
         },2000);
       },
       error: function(data) {
+        hideVerificationloadbtn();
         console.log("OTP FAILURE");
         console.log(data);
       }

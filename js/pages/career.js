@@ -52,6 +52,7 @@ $("#careerform").submit(function(e) {
       },
     },  
     submitHandler: function(){
+      hideVerificationloadbtn();
       sendOtp();
     }
   });
@@ -162,10 +163,25 @@ $("#careerform").submit(function(e) {
     });
   }
 
+  function showVerificationloadbtn(){
+    document.getElementById("submitotp").style.display = "none";
+    document.getElementById("resendotp").style.display = "none";
+    document.getElementById("cancelmobileverification").style.display = "none";
+    document.getElementById("verification_btn").style.display = "block";
+}
+
+function hideVerificationloadbtn(){
+    document.getElementById("submitotp").style.display = "block";
+    document.getElementById("resendotp").style.display = "block";
+    document.getElementById("cancelmobileverification").style.display = "block";
+    document.getElementById("verification_btn").style.display = "none";
+}
+
   function hideModal(){
     statuscode="";
     document.getElementById("otpnotification").innerHTML="";
     document.getElementById("otp_input").value="";
+    hideVerificationloadbtn();
     $('#mobileverfication-modal').modal('toggle');
   }
 
@@ -175,6 +191,9 @@ $("#careerform").submit(function(e) {
   
   
   function callApicall() {
+
+    showVerificationloadbtn();
+
     var formData = new FormData();
 
     let props = $('#resume').prop('files');
@@ -207,6 +226,7 @@ $("#careerform").submit(function(e) {
         },2000);
       },
       error: function(data) {
+        hideVerificationloadbtn();
         console.log("OTP FAILURE");
         console.log(data);
       }
