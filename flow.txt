@@ -7,8 +7,8 @@ MAIL JET TEST CREDENTIAL
     SERVER : in-v3.mailjet.com
     Use TLS : optional
     Port : 25 or 587 (some providers block port 25)
-
-localhost/svgroups/backend/enquirymail.php?yourname=NESAMANI&emailaddress=nesamani@friendswebsolution.com&mobilenumber=8973409433&description=S
+    http://localhost/svgroups/backend/enquirymail.php
+    http://localhost/svgroups/backend/enquirymail.php?yourname=NESAMANI&emailaddress=nesamani@friendswebsolution.com&mobilenumber=8973409433&description=S
 
 FORM PAGES IN SV GROUPS
     1)career.php - career form

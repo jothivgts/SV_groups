@@ -31,12 +31,12 @@ $mail->Password   = $smtpconfig->Password;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
 $mail->Port       = $smtpconfig->Port;
 
-//Recipients
-// $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
-$mail->addAddress('k3sha7@gmail.com', 'keshav');
-$mail->SetFrom('fromgmail@gmail.com', 'SV Groups');
-$mail->AddAttachment($file_tmp, $file_name);                               
-$mail->Subject = 'Career position';
+$mail->SetFrom('nesamani@friendswebsolution.com', 'Nesamani R');
+$mail->addAddress('nesamani@friendswebsolution.com', 'Nesamani R');
+$mail->addAddress('nesamani@vishgyana.com', 'Nesamani R');
+$mail->Subject = 'Career Mail';
+$mail->AddAttachment($file_tmp, $file_name);
+
 $mail->Body=
 "<!DOCTYPE html>
 <html lang='en'>
@@ -57,21 +57,7 @@ Position : ".$position." <br/>
 $mail->isHTML(true);
 $mail->send();
 
-$tobody = "<!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Document</title>
-</head>
-<body>
-Thanks for your request.
-</body>
-</html>
-";
-
-userNotification($name,$email,$tobody);
+userNotification($name,$email,false);
 
 echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
 
