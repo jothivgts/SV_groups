@@ -52,3 +52,6 @@ $CONTACT_ACTIVE = $file == "contact-us.php" ? 'active' : '';
         </div>
       </nav>
 
+<script>
+  window.scrollTo(0,0);
+</script>
