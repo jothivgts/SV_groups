@@ -1,13 +1,17 @@
+$.validator.methods.email = function( value, element ) {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+}
+
 $(document).ready(function () {
   var owl = $("#first_slider")
   owl.owlCarousel({
     items: 2,
+    autoplayTimeout: 4000,
     loop: true,
     center: true,
     margin: 20,
     nav: false,
-    // navText: ["<i class='fas fa-arrow-right'></i>","<img src='arrow-right-solid.svg'>"],
-    autoplay: false,
+    autoplay: true,
     responsiveClass: true,
     responsive: {
       600: {
@@ -36,10 +40,11 @@ $(document).ready(function () {
     loop: true,
     margin: 20,
     nav: false,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: false,
     responsiveClass: true,
+    dots: false,
     responsive: {
       600: {
         item:3,
@@ -141,11 +146,17 @@ function FormInvalidMessagePurpose(select) {
 }
 
 
+$.validator.methods.email = function( value, element ) {
+  return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
+}
+
+
 $( "#enquiryform" ).validate({
   ignore: ".ignore",
   rules: {
     yourname: {
-      required: true
+      required: true,
+      minlength: 3,
     },emailaddress: {
       required: true,
       email : true,
@@ -159,6 +170,7 @@ $( "#enquiryform" ).validate({
     },
     description:{
       required: true,
+      minlength: 3,
     },
     hiddenRecaptcha: {
       required: function () {
@@ -167,7 +179,10 @@ $( "#enquiryform" ).validate({
     }
   },
   messages: {
-    yourname: "Kindly enter your name",
+    yourname: {
+      required: "Kindly enter your name",
+      minlength: "Minimum 3 characters",
+    },
     emailaddress: {
       required: "Kindly enter your email address",
       email: "Enter valid format"
@@ -181,6 +196,7 @@ $( "#enquiryform" ).validate({
     },
     description : {
       required: "Kindly enter description",
+      minlength: "Minimum 3 characters",
     }
   },  
   submitHandler: function(form){

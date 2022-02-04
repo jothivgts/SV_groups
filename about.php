@@ -43,7 +43,7 @@
                 <p>
                   We are passionate about harnessing innovation as a positive
                   force for change and we instil this mindset culturally in
-                  every element of our operations for project delivery.
+                  every element of our operations for projects delivery.
                 </p>
                 <!-- <img
                   class="signature my-4"

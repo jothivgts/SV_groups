@@ -1,3 +1,7 @@
+$.validator.methods.email = function( value, element ) {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+}
+
 $( "#exploreform" ).validate({
     ignore: ".ignore",
     rules: {
@@ -51,13 +55,20 @@ $( "#exploreform" ).validate({
       document.getElementById("explornow_submitbtn").disabled = true;
       document.getElementById("explornow_submitbtn").innerHTML = "Loading ..."; 
       
-      $.get("backend/enquirymail.php",fordata,function(data, status){
-        //After mail sent
-        alert("Form submited")
-        document.getElementById("exploreform").reset();
-        document.getElementById("explornow_submitbtn").disabled = false;
-        document.getElementById("explornow_submitbtn").innerHTML = "Submit"; 
+      $.ajax({
+        url: 'backend/enquirymail.php',
+        data: fordata,
+        method: 'GET',
+        type: 'GET',
+        success: function(SUCCESDATA){
+            document.getElementById("exploreform").reset();
+            document.getElementById("explornow_submitbtn").disabled = false;
+            document.getElementById("explornow_submitbtn").innerHTML = "Submit"; 
+        },
+        error: function(ERRORDATA) {
+        }
       });
+
     }
   });
 
@@ -139,26 +150,39 @@ $( "#exploreform" ).validate({
       //Button load
       document.getElementById("floorplan_submitbtn").disabled = true;
       document.getElementById("floorplan_submitbtn").innerHTML = "Loading ..."; 
-      $.get("backend/floorplanmail.php",fordata,function(data, status){
-        //After mail sent
-        if(twobhk) {
-          window.open(bhk2, "_blank");
-          let link = document.createElement('a');
-          link.href = bhk2;
-          link.download = "2bhk.zip";
-          link.dispatchEvent(new MouseEvent('click'));
-      } else {
-          window.open(bhk3, "_blank");
-          let link = document.createElement('a');
-          link.href = bhk3;
-          link.download = "3bhk.zip";
-          link.dispatchEvent(new MouseEvent('click'));
-      }
-        $('#floorplanform-modal').modal('toggle');
-        document.getElementById("floorplanform").reset();
-        document.getElementById("floorplan_submitbtn").disabled = false;
-        document.getElementById("floorplan_submitbtn").innerHTML = "Submit"; 
-      });
+      
+     
+        $.ajax({
+          url: 'backend/floorplanmail.php',
+          data: fordata,
+          method: 'GET',
+          type: 'GET',
+          success: function(SUCCESDATA){
+                    
+              $('#floorplanform-modal').modal('toggle');
+              document.getElementById("floorplanform").reset();
+              document.getElementById("floorplan_submitbtn").disabled = false;
+              document.getElementById("floorplan_submitbtn").innerHTML = "Submit"; 
+              
+              //After mail sent
+              if(twobhk) {
+                window.open(bhk2, "_blank");
+                let link = document.createElement('a');
+                link.href = bhk2;
+                link.download = "2bhk.zip";
+                link.dispatchEvent(new MouseEvent('click'));
+            } else {
+                window.open(bhk3, "_blank");
+                let link = document.createElement('a');
+                link.href = bhk3;
+                link.download = "3bhk.zip";
+                link.dispatchEvent(new MouseEvent('click'));
+            }
+          },
+          error: function(ERRORDATA) {
+          }
+        });
+
       }
   });
   
@@ -233,19 +257,32 @@ $( "#broucherform" ).validate({
     //Button load
     document.getElementById("broucher_submitbtn").disabled = true;
     document.getElementById("broucher_submitbtn").innerHTML = "Loading ..."; 
-    $.get("backend/brouchermail.php",fordata,function(data, status){
-      //After mail sent
-      let filepath = './asset/brochure.pdf';
-      let link = document.createElement('a');
-      link.href = filepath;
-      link.download = "brochure.pdf";
-      link.dispatchEvent(new MouseEvent('click'));
-
-      $('#broucherform-modal').modal('toggle');
-      document.getElementById("broucherform").reset();
-      document.getElementById("broucher_submitbtn").disabled = false;
-      document.getElementById("broucher_submitbtn").innerHTML = "Submit"; 
+    
+    $.ajax({
+      url: 'backend/brouchermail.php',
+      data: fordata,
+      method: 'GET',
+      type: 'GET',
+      success: function(SUCCESDATA){
+      
+          $('#broucherform-modal').modal('toggle');
+          document.getElementById("broucherform").reset();
+          document.getElementById("broucher_submitbtn").disabled = false;
+          document.getElementById("broucher_submitbtn").innerHTML = "Submit"; 
+      
+          //After mail sent
+          let filepath = './asset/brochure.pdf';
+          let link = document.createElement('a');
+          link.href = filepath;
+          link.download = "brochure.pdf";
+          link.dispatchEvent(new MouseEvent('click'));
+      
+      },
+      error: function(ERRORDATA) {
+      }
     });
+
+
   }
 });
 

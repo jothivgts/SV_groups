@@ -1,4 +1,9 @@
 //FORM VALIDATION START
+$.validator.methods.email = function( value, element ) {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+}
+
+
 $("#careerform").submit(function(e) {
   e.preventDefault();
 }).validate({

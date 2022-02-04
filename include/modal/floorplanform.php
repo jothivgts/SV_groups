@@ -54,8 +54,9 @@
 
 
                         <div css="modalformcustomfooter">
-                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
                         <button  type="submit" id="floorplan_submitbtn" class="btn btn-outline-warning" style="">submit</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
+                        
                         </div>
                        
                         </form> 
