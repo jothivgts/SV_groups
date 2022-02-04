@@ -33,12 +33,13 @@
                            id="broucherform_mobilenumber"
                            >
                         
-                           <textarea 
+                           <textarea
+                           style="display:none"
                            class="form-control" 
                            placeholder="Your description" 
                            name="broucherform_description"
                            id="broucherform_description"
-                           ></textarea>
+                           >ABCDEF</textarea>
 
 
                            <div 

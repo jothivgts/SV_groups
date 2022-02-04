@@ -33,14 +33,15 @@
                            id="floorplan_mobilenumber"
                            >
                         
-                           <textarea 
+                           <textarea
+                           style="display:none"
                            class="form-control" 
                            placeholder="Your description" 
                            name="floorplan_description"
                            id="floorplan_description"
-                           ></textarea>
+                           >ABCDEF</textarea>
 
-                            <p>Floor plan</p>
+                            <p style="margin:5px 0px">Floor plan</p>
                             <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">2BHK
                             <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">3BHK
 

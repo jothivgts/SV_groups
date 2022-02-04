@@ -44,7 +44,6 @@ $mail->Body=
                 Name    : ".$name."     <br/>
                 Email   : ".$email."    <br/>
                 Mobile  : ".$mobile."   <br/>
-                Content : ".$content."  <br/>
             </body>
         </html>
         ";
