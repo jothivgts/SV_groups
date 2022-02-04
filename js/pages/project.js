@@ -80,27 +80,16 @@ $( "#floorplanform" ).validate({
         method: 'GET',
         type: 'GET',
         success: function(SUCCESDATA){
-        
             $('#floorplanform-modal').modal('toggle');
             document.getElementById("floorplanform").reset();
             document.getElementById("floorplan_submitbtn").disabled = false;
             document.getElementById("floorplan_submitbtn").innerHTML = "Submit"; 
             
-            //After mail sent
             if(twobhk) {
-              window.open(bhk2, "_blank");
-              let link = document.createElement('a');
-              link.href = bhk2;
-              link.download = "2bhk.zip";
-              link.dispatchEvent(new MouseEvent('click'));
-          } else {
-              window.open(bhk3, "_blank");
-              let link = document.createElement('a');
-              link.href = bhk3;
-              link.download = "3bhk.zip";
-              link.dispatchEvent(new MouseEvent('click'));
-          }
-          
+              window.open("./asset/2BHK.zip", '_blank');
+            } else {
+              window.open("./asset/3BHK.zip", '_blank');
+            }
         },
         error: function(ERRORDATA) {
         }
@@ -189,12 +178,9 @@ submitHandler: function(form){
         document.getElementById("broucher_submitbtn").disabled = false;
         document.getElementById("broucher_submitbtn").innerHTML = "Submit"; 
         
-        //After mail sent
-        let filepath = './asset/brochure.pdf';
-        let link = document.createElement('a');
-        link.href = filepath;
-        link.download = "brochure.pdf";
-        link.dispatchEvent(new MouseEvent('click'));
+         //After mail sent
+         let filepath = './asset/brochure.pdf';
+         window.open(filepath, '_blank');
     },
     error: function(ERRORDATA) {
     }
