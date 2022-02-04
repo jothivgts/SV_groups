@@ -1,4 +1,8 @@
 //FORM VALIDATION START
+$.validator.methods.email = function( value, element ) {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+}
+
 $( "#contactusform" ).validate({
     ignore: ".ignore",
     rules: {

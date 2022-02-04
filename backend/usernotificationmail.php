@@ -1,10 +1,13 @@
 <?php
 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+include('../include/config.php');
 require('../vendor/autoload.php');
+
 
 function userNotification($toname,$tomail,$attachment = true){
 
@@ -26,6 +29,11 @@ Dear Mr. / Mrs. ".$toname.",
 We would like to express our thanks for your interest in our apartment.
 Regarding your inquiry, Please note that the mail is enclosed with Brochure, Floor Plans and Walk-through Videos at the end of this email.
 Our Sales Team will contact you within 24hrs. Should there be any questions, please feel free to contact us on +91 - 9845001343 / 9845001560 / 9845001792 (or) write to us svgrandur@svgroups.in. We look forward to hear from you.
+
+<a href='".$USERNOTIFICATION_FILE_PATH."/asset/brochure.pdf' target='_blank'> Broucher </a>
+<a href='".$USERNOTIFICATION_FILE_PATH."/asset/2BHK.zip' target='_blank'> 2BHK </a>
+<a href='".$USERNOTIFICATION_FILE_PATH."/asset/asset/3BHK.zip' target='_blank'> 3BHK </a>
+<a href='".$USERNOTIFICATION_FILE_PATH."/asset/asset/masterplan.jpg' target='_blank'> Masterplan </a>
 
 Yours sincerely,
 Marketing Teams,
@@ -71,14 +79,6 @@ SV Groups
     $mail->addAddress('nesamani@vishgyana.com', 'Nesamani R');
     $mail->addAddress($tomail,$toname);
     $mail->Subject = 'SV groups - Thanks for interest';
-
-    if($attachment){
-        $mail->addAttachment('../asset/brochure.pdf', 'Brochure.pdf');
-        // $mail->addAttachment('../asset/2BHK.zip', '2BHK.zip');
-        // $mail->addAttachment('../asset/3BHK.zip', '3BHK.zip');
-        // $mail->addAttachment('../asset/brochure.pdf', 'Brochure.pdf');
-    }
-
     $mail->Body = $tobody;
     $mail->isHTML(true);
     $mail->send();

@@ -50,8 +50,9 @@
 
 
                         <div  css="modalformcustomfooter">
+                        <button  type="submit" id="enquiryform_submitbtn" class="btn btn-outline-warning" >submit</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
-                        <button  type="submit" id="enquiryform_submitbtn" class="btn btn-outline-warning" style="margin-">submit</button>
+                        
                         </div>
                        
                         </form> 
