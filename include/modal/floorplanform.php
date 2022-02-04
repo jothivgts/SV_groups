@@ -54,8 +54,8 @@
                         <input type="hidden" name="floorplanRecaptcha" id="floorplanRecaptcha" value="">
 
 
-                        <div css="modalformcustomfooter">
-                        <button  type="submit" id="floorplan_submitbtn" class="btn btn-outline-warning" style="">submit</button>
+                        <div class="modalformcustomfooter just-cont-space-start">
+                        <button  style="margin-right: 5px;" type="submit" id="floorplan_submitbtn" class="btn btn-outline-warning" style="">submit</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
                         
                         </div>

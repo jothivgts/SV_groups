@@ -51,9 +51,8 @@
                             <input type="hidden" name="broucherformRecaptcha" id="broucherformRecaptcha" value="">
 
 
-                        <div  css="modalformcustomfooter">
-
-                        <button  type="submit" id="broucher_submitbtn" class="btn btn-outline-warning">submit</button>
+                        <div  class="modalformcustomfooter just-cont-space-start">
+                        <button style="margin-right: 5px;"  type="submit" id="broucher_submitbtn" class="btn btn-outline-warning">submit</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
                         
                         </div>
