@@ -9,5 +9,6 @@ function removeFilename($url)
         : $url;
 }
 
-$USERNOTIFICATION_FILE_PATH = trim(removeFilename($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']),"/backend/");
+// $USERNOTIFICATION_FILE_PATH = trim(removeFilename($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']),"/backend/");
+$USERNOTIFICATION_FILE_PATH = "https://svgroups.in/new/svgroups";
 ?>
