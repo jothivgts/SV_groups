@@ -20,11 +20,6 @@ $( "#exploreform" ).validate({
       },
       explore_description:{
         required: true,
-      },
-      homeRecaptcha: {
-        required: function () {
-          return document.getElementById("homeRecaptcha").value == "";
-        }
       }
     },
     messages: {
@@ -80,7 +75,9 @@ $( "#exploreform" ).validate({
 
 //  Floor plan form start
 
-  $("#floorplanform").validate({
+  $("#floorplanform").submit(function(e) {
+    e.preventDefault();
+  }).validate({
     ignore: ".ignore",
     rules: {
       floorplan_yourname: {
@@ -103,11 +100,6 @@ $( "#exploreform" ).validate({
       },
       floorplan: { 
         required: true
-      },
-      floorplanRecaptcha: {
-        required: function () {
-          return document.getElementById("floorplanRecaptcha").value == "";
-        }
       }
     },
     messages: {
@@ -188,7 +180,9 @@ $( "#exploreform" ).validate({
 
 //  Broucher form start
 
-$( "#broucherform" ).validate({
+$( "#broucherform" ).submit(function(e) {
+  e.preventDefault();
+}).validate({
   ignore: ".ignore",
   rules: {
     broucherform_yourname: {
@@ -208,11 +202,6 @@ $( "#broucherform" ).validate({
     broucherform_description:{
       required: true,
         minlength: 3,
-    },
-    broucherformRecaptcha: {
-      required: function () {
-        return document.getElementById("broucherformRecaptcha").value == "";
-      }
     }
   },
   messages: {

@@ -30,11 +30,6 @@ $("#careerform").submit(function(e) {
         required: true,
         extension: "pdf"
       },
-      contactRecaptcha: {
-        required: function () {
-          return document.getElementById("contactRecaptcha").value == "";
-        }
-      }
     },
     messages: {
       career_yourname: {

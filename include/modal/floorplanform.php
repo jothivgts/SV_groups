@@ -45,17 +45,17 @@
                             <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">2BHK
                             <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">3BHK
 
-                           <div 
+                           <!-- <div 
                            class="g-recaptcha"
                            data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
                            data-callback="floorplanRecaptcha"
                            >
-                        </div>
+                        </div> -->
                         <input type="hidden" name="floorplanRecaptcha" id="floorplanRecaptcha" value="">
 
 
-                        <div css="modalformcustomfooter">
-                        <button  type="submit" id="floorplan_submitbtn" class="btn btn-outline-warning" style="">submit</button>
+                        <div class="modalformcustomfooter just-cont-space-start">
+                        <button  style="margin-right: 5px;" type="submit" id="floorplan_submitbtn" class="btn btn-outline-warning" style="">submit</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Close</button>
                         
                         </div>

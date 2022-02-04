@@ -1654,7 +1654,14 @@ select {
   padding: 20px;
   border-top: 1px solid #dee2e6;
   margin-top: 10px;
+}
+
+.just-cont-space-btw {
   justify-content: space-between;
+}
+
+.just-cont-space-start {
+  justify-content: start;
 }
 
 .downloadplan {

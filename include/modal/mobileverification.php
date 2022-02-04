@@ -1,6 +1,6 @@
 <?php ?>
 
-<div data-backdrop="static" data-keyboard="false" class="modal fade" id="mobileverfication-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true">
+<div data-backdrop="static" data-keyboard="false" class="modal fade" id="mobileverfication-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true" style="z-index:100000">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -19,7 +19,7 @@
                            maxlength="6"
                            >
                            <span id="otpnotification"></span>
-                        <div  class="modalformcustomfooter">
+                        <div  class="modalformcustomfooter just-cont-space-btw">
                         <button type="button" id="submitotp" class="btn btn-outline-info mr-1" > SUBMIT OTP </button>
                         <button type="button" id="resendotp" class="btn btn-outline-success mr-1" > RESEND OTP </button>
                         <button type="button" id="cancelmobileverification" class="btn btn-outline-danger" > CANCEL </button>

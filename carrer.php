@@ -65,11 +65,12 @@
                         <input style="height:10px" class="form-control form-control-lg mt-0" id="resume" name="resume" type="file">
                   </div>
 
-                  <div 
+                  <!-- <div 
                     class="g-recaptcha" 
                     data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
                     data-callback="contactRecaptcha">
-                  </div>
+                  </div> -->
+
                   <input type="hidden" name="contactRecaptcha" id="contactRecaptcha" value="">
                   
                   
