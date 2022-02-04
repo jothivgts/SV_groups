@@ -25,6 +25,7 @@
 <!-- The Modal -->
     <?php include('./include/modal/floorplanform.php');?>
     <?php include('./include/modal/broucherform.php');?>
+    <?php include('./include/modal/mobileverification.php');?>
 
     <!-- lightbox -->
     <div id="masterPlanlightmodal" class="lightbox-modal">

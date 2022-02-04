@@ -151,7 +151,9 @@ $.validator.methods.email = function( value, element ) {
 }
 
 
-$( "#enquiryform" ).validate({
+$( "#enquiryform" ).submit(function(e) {
+  e.preventDefault();
+}).validate({
   ignore: ".ignore",
   rules: {
     yourname: {
@@ -195,29 +197,184 @@ $( "#enquiryform" ).validate({
     }
   },  
   submitHandler: function(form){
-    let yourname = $('#yourname').val();
-    let emailaddress = $('#emailaddress').val();
-    let mobilenumber = $('#mobilenumber').val();
-    let description = $('#description').val();
-    let fordata = { yourname,emailaddress,mobilenumber,description };
-
-    //Button load
-    document.getElementById("enquiryform_submitbtn").disabled = true;
-    document.getElementById("enquiryform_submitbtn").innerHTML = "Loading ..."; 
-    
-    $.get("backend/enquirymail.php",fordata,function(data, status){
-      //After mail sent
-      $('#form-modal').modal('toggle');
-      document.getElementById("enquiryform").reset();
-      document.getElementById("enquiryform_submitbtn").disabled = false;
-      document.getElementById("enquiryform_submitbtn").innerHTML = "Submit"; 
-    });
+    CommonhideVerificationloadbtn();
+    CommonsendOtp();
   }
 });
 
 function recaptchaCallback(callbackvalue) {
   document.getElementById("hiddenRecaptcha").value = callbackvalue;
 };
+
+
+
+// MOBILE OTP AND VALIDATION START
+
+function CommonMobileModalStatis(){
+  $('#mobileverfication-modal').modal({backdrop: 'static', keyboard: false})  
+}
+
+setTimeout(function() {
+  CommonMobileModalStatis()
+},3000);
+
+
+let CommonStatuscode = "";
+
+
+document.getElementById("submitotp").addEventListener("click",function() {
+
+  document.getElementById("otpnotification").innerHTML="";
+
+  let otp_input = document.getElementById("otp_input").value;
+  let formData = { statuscode :CommonStatuscode,otp_input };
+
+  console.log("formData");
+  console.log(formData);
+
+  $.ajax({
+    url: 'backend/api.php?verifyotp=true',
+    data: formData,
+    method: 'POST',
+    type: 'POST',
+    success: function(data){
+      let { Status , Details } = JSON.parse(data);
+      if(Status == "Success"){
+        CommoncallApicall();
+      }else{
+        document.getElementById("otpnotification").innerHTML=Details;
+      }
+    },
+    error: function(data) {
+      console.log("SUBMIT FAILURE");
+      console.log(data);
+    }
+  });
+  
+});
+
+document.getElementById("resendotp").addEventListener("click",function() {
+
+  document.getElementById("otpnotification").innerHTML="";
+
+  let mobilenumber = $('#career_mobilenumber').val();
+  let formData = { mobilenumber };
+
+  $.ajax({
+    url: 'backend/api.php?sendotptouser=true',
+    data: formData,
+    method: 'POST',
+    type: 'POST',
+    success: function(data){
+      let { Status , Details } = JSON.parse(data);
+      if(Status == "Success"){
+        CommonStatuscode = Details;
+        document.getElementById("otpnotification").innerHTML="OTP re-sent successfull";
+      }else{
+        CommonStatuscode = "";
+        document.getElementById("otpnotification").innerHTML=Details;
+      }
+    },
+    error: function(data) {
+      console.log("SEND OTP TO USER FAILURE");
+      console.log(data);
+    }
+  });
+
+});
+
+function CommonsendOtp(){
+  document.getElementById("otpnotification").innerHTML="";
+
+  let mobilenumber = $('#mobilenumber').val();
+  let formData = { mobilenumber };
+
+  $.ajax({
+    url: 'backend/api.php?sendotptouser=true',
+    data: formData,
+    method: 'POST',
+    type: 'POST',
+    success: function(data){
+      let { Status , Details } = JSON.parse(data);
+      if(Status == "Success"){
+        CommonStatuscode = Details;
+        $('#mobileverfication-modal').modal('toggle');
+      }else{
+        CommonStatuscode = "";
+        document.getElementById("otpnotification").innerHTML=Details;
+      }
+    },
+    error: function(data) {
+      console.log("SEND OTP TO USER FAILURE");
+      console.log(data);
+    }
+  });
+}
+
+function CommonshowVerificationloadbtn(){
+  document.getElementById("submitotp").style.display = "none";
+  document.getElementById("resendotp").style.display = "none";
+  document.getElementById("cancelmobileverification").style.display = "none";
+  document.getElementById("verification_btn").style.display = "block";
+}
+
+function CommonhideVerificationloadbtn(){
+  document.getElementById("submitotp").style.display = "block";
+  document.getElementById("resendotp").style.display = "block";
+  document.getElementById("cancelmobileverification").style.display = "block";
+  document.getElementById("verification_btn").style.display = "none";
+}
+
+function CommonhideModal(){
+  CommonStatuscode="";
+  document.getElementById("otpnotification").innerHTML="";
+  document.getElementById("otp_input").value="";
+  CommonhideVerificationloadbtn();
+  $('#mobileverfication-modal').modal('toggle');
+}
+
+document.getElementById("cancelmobileverification").addEventListener("click",function() {
+  CommonhideModal();
+});
+
+
+function CommoncallApicall() {
+
+  CommonshowVerificationloadbtn();
+
+  let yourname = $('#yourname').val();
+  let emailaddress = $('#emailaddress').val();
+  let mobilenumber = $('#mobilenumber').val();
+  let description = $('#description').val();
+  let fordata = { yourname,emailaddress,mobilenumber,description };
+
+  //Button load
+  document.getElementById("enquiryform_submitbtn").disabled = true;
+  document.getElementById("enquiryform_submitbtn").innerHTML = "Loading ..."; 
+  
+   $.ajax({
+    url: 'backend/enquirymail.php',
+    data: fordata,
+    method: 'GET',
+    type: 'GET',
+    success: function(data){
+      $('#form-modal').modal('toggle');
+      document.getElementById("enquiryform").reset();
+      document.getElementById("enquiryform_submitbtn").disabled = false;
+      document.getElementById("enquiryform_submitbtn").innerHTML = "Submit"; 
+      setTimeout(function() {
+        CommonhideModal();
+      },2000);
+    },
+    error: function(data) {
+      CommonhideVerificationloadbtn();
+      console.log("OTP FAILURE");
+      console.log(data);
+    }
+  });
+}
+
+// MOBILE OTP AND VALIDATION END
 
 
 

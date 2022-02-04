@@ -1,6 +1,6 @@
 <?php ?>
 
-<div data-backdrop="static" data-keyboard="false" class="modal fade" id="mobileverfication-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true">
+<div data-backdrop="static" data-keyboard="false" class="modal fade" id="mobileverfication-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true" style="z-index:100000">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">

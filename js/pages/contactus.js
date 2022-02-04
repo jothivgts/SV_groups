@@ -3,7 +3,9 @@ $.validator.methods.email = function( value, element ) {
   return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
 }
 
-$( "#contactusform" ).validate({
+$( "#contactusform" ).submit(function(e) {
+  e.preventDefault();
+}).validate({
     ignore: ".ignore",
     rules: {
       contact_yourname: {

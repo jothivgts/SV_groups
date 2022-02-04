@@ -75,7 +75,9 @@ $( "#exploreform" ).validate({
 
 //  Floor plan form start
 
-  $("#floorplanform").validate({
+  $("#floorplanform").submit(function(e) {
+    e.preventDefault();
+  }).validate({
     ignore: ".ignore",
     rules: {
       floorplan_yourname: {
@@ -178,7 +180,9 @@ $( "#exploreform" ).validate({
 
 //  Broucher form start
 
-$( "#broucherform" ).validate({
+$( "#broucherform" ).submit(function(e) {
+  e.preventDefault();
+}).validate({
   ignore: ".ignore",
   rules: {
     broucherform_yourname: {
