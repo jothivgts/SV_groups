@@ -10,20 +10,24 @@ $( "#contactusform" ).submit(function(e) {
     rules: {
       contact_yourname: {
         required: true,
+
         minlength: 3,
       },contact_emailaddress: {
         required: true,
+
         email : true,
         required: true
       },
       contact_mobilenumber: {
         required: true,
+
             number: true,
             minlength: 10,
             maxlength: 10
       },
       contact_description: {
         required: true,
+
         minlength: 3,
       }
     },
