@@ -10,20 +10,24 @@ $( "#floorplanform" ).submit(function(e) {
   rules: {
     floorplan_yourname: {
       required: true,
+
       minlength: 3,
     },floorplan_emailaddress: {
       required: true,
+
       email : true,
       required: true
     },
     floorplan_mobilenumber: {
       required: true,
+
           number: true,
           minlength: 10,
           maxlength: 10
     },
     floorplan_description:{
       required: true,
+
       minlength: 3,
     },
     floorplan: { 
@@ -73,20 +77,24 @@ $( "#broucherform" ).submit(function(e) {
   rules: {
     broucherform_yourname: {
       required: true,
+
       minlength: 3,
     },broucherform_emailaddress: {
       required: true,
+
       email : true,
       required: true
     },
     broucherform_mobilenumber: {
       required: true,
+
           number: true,
           minlength: 10,
           maxlength: 10
     },
     broucherform_description:{
       required: true,
+
         minlength: 3,
     }
   },
@@ -214,7 +222,6 @@ function sendOtp(){
   let mobilenumber="";
   
   if($('#broucherform-modal').hasClass('show')){
-    alert("hello");
       mobilenumber = $('#broucherform_mobilenumber').val();
   }else{
       mobilenumber = $('#floorplan_mobilenumber').val();

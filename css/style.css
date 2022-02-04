@@ -1781,22 +1781,7 @@ select {
   padding: 80px 0px 0px 0px;
 }
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 26.9077px;
-
-position: absolute;
-width: 712px;
-height: 583.37px;
-left: 121px;
-top: 560px;
-
-background: rgba(226, 236, 252, 0.21);
-backdrop-filter: blur(39.4646px);
-
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 10px;
-
-/* FORM HEADING SECTION END */
+.mobileverifysetup {
+  width: 580px !important;
+  max-width: unset !important;
+}
