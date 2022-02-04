@@ -34,12 +34,11 @@
                            >
                         
                            <textarea 
-                           style="display:none"
                            class="form-control" 
-                           placeholder="Your description"
+                           placeholder="Your description" 
                            name="description"
                            id="description"
-                           >ABCDEF</textarea>
+                           ></textarea>
 
                            <div 
                            class="g-recaptcha" 
