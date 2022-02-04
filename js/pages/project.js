@@ -26,11 +26,6 @@ $( "#floorplanform" ).validate({
     },
     floorplan: { 
       required: true
-    },
-    floorplanRecaptcha: {
-      required: function () {
-        return document.getElementById("floorplanRecaptcha").value == "";
-      }
     }
   },
   messages: {
@@ -126,11 +121,6 @@ rules: {
   broucherform_description:{
     required: true,
       minlength: 3,
-  },
-  broucherformRecaptcha: {
-    required: function () {
-      return document.getElementById("broucherformRecaptcha").value == "";
-    }
   }
 },
 messages: {

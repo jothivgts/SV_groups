@@ -45,12 +45,12 @@
                             <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">2BHK
                             <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">3BHK
 
-                           <div 
+                           <!-- <div 
                            class="g-recaptcha"
                            data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
                            data-callback="floorplanRecaptcha"
                            >
-                        </div>
+                        </div> -->
                         <input type="hidden" name="floorplanRecaptcha" id="floorplanRecaptcha" value="">
 
 

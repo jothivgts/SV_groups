@@ -171,11 +171,6 @@ $( "#enquiryform" ).validate({
     description:{
       required: true,
       minlength: 3,
-    },
-    hiddenRecaptcha: {
-      required: function () {
-        return document.getElementById("hiddenRecaptcha").value == "";
-      }
     }
   },
   messages: {

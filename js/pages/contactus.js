@@ -23,11 +23,6 @@ $( "#contactusform" ).validate({
       contact_description: {
         required: true,
         minlength: 3,
-      },
-      contactRecaptcha: {
-        required: function () {
-          return document.getElementById("contactRecaptcha").value == "";
-        }
       }
     },
     messages: {

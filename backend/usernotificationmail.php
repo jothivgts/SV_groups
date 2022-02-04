@@ -74,9 +74,7 @@ SV Groups
     $mail->Password   = $smtpconfig->Password;                   
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
     $mail->Port       = $smtpconfig->Port;
-    $mail->SetFrom('nesamani@friendswebsolution.com', 'Nesamani R');
-    $mail->addAddress('nesamani@friendswebsolution.com', 'Nesamani R');
-    $mail->addAddress('nesamani@vishgyana.com', 'Nesamani R');
+    $mail->SetFrom('svgrandur@svgroups.in', 'SV Groups');
     $mail->addAddress($tomail,$toname);
     $mail->Subject = 'SV groups - Thanks for interest';
     $mail->Body = $tobody;

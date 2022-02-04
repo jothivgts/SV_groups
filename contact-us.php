@@ -65,11 +65,12 @@
                         <textarea style="margin-top: 15px" class="form-control" placeholder="Description" name="contact_description" id="contact_description"></textarea>
                   </div>
 
-                  <div 
+                  <!-- <div 
                     class="g-recaptcha" 
                     data-sitekey="6LeCkMUdAAAAAOly8h1e4t4oIRlDODXWbBM5iUJ4"
                     data-callback="contactRecaptcha">
-                  </div>
+                  </div> -->
+
                   <input type="hidden" name="contactRecaptcha" id="contactRecaptcha" value="">
           
                   <button type="submit" id="contactbtn" class="cform-btn">

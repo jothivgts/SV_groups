@@ -383,7 +383,7 @@
                     </div>
                     <div class="item">
                         <img class="icon" src="images/Screenshot 2021-10-27 at 14.50 3.svg" alt="svg">
-                        <p>Amazing infrastructure in SV GRANDEUR and good work from SV GROUPS. Congratulations to the team and please continue to develop new projects for people’s benefit.</p>
+                        <p>Amazing infrastructure in SV GRANDUR and good work from SV GROUPS. Congratulations to the team and please continue to develop new projects for people’s benefit.</p>
                         <h4>C Karthikeyan</h4>
                     </div>
                     <div class="item">
