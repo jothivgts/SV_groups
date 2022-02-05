@@ -11,28 +11,28 @@ $("#careerform").submit(function(e) {
     rules: {
       career_yourname: {
         required: true,
-
+        nowhitespace : true,
         minlength: 3,
       },career_emailaddress: {
         required: true,
-
+        nowhitespace : true,
         email : true,
         required: true
       },
       career_mobilenumber: {
         required: true,
-
+        nowhitespace : true,
             number: true,
             minlength: 10,
             maxlength: 10
       },
       career_position:{
         required: true,
-
+        nowhitespace : true,
       },
       resume:{
         required: true,
-
+        nowhitespace : true,
         extension: "pdf"
       },
     },

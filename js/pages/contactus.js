@@ -10,24 +10,24 @@ $( "#contactusform" ).submit(function(e) {
     rules: {
       contact_yourname: {
         required: true,
-
+        nowhitespace : true,
         minlength: 3,
       },contact_emailaddress: {
         required: true,
-
+        nowhitespace : true,
         email : true,
         required: true
       },
       contact_mobilenumber: {
         required: true,
-
+        nowhitespace : true,
             number: true,
             minlength: 10,
             maxlength: 10
       },
       contact_description: {
         required: true,
-
+        nowhitespace : true,
         minlength: 3,
       }
     },
