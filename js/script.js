@@ -158,23 +158,23 @@ $( "#enquiryform" ).submit(function(e) {
   rules: {
     yourname: {
       required: true,
-      nowhitespace : true,
+
       minlength: 3,
     },emailaddress: {
       required: true,
-      nowhitespace : true,
+
       email : true
     },
     mobilenumber: {
       required: true,
-      nowhitespace : true,
+
 		  number: true,
 		  minlength: 10,
 		  maxlength: 10
     },
     description:{
       required: true,
-      nowhitespace : true,
+
       minlength: 3,
     }
   },
