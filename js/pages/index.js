@@ -106,7 +106,6 @@ $( "#exploreform" ).validate({
         minlength: 3,
       },
       floorplan: {
-        nowhitespace : true,
         required: true
       }
     },

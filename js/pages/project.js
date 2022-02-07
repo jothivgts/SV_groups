@@ -31,7 +31,6 @@ $( "#floorplanform" ).submit(function(e) {
     },
     floorplan: { 
       required: true,
-      nowhitespace : true,
     }
   },
   messages: {

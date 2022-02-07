@@ -28,11 +28,9 @@ $("#careerform").submit(function(e) {
       },
       career_position:{
         required: true,
-        nowhitespace : true,
       },
       resume:{
         required: true,
-        nowhitespace : true,
         extension: "pdf"
       },
     },
