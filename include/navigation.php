@@ -51,4 +51,3 @@ $CONTACT_ACTIVE = $file == "contact-us.php" ? 'active' : '';
           </div>
         </div>
       </nav>
-
