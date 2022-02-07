@@ -1337,6 +1337,10 @@ select {
 }
 
 @media (max-width: 420px) {
+  .mobileverifysetup {
+    width: 96%;
+  }
+
   .navbar {
     margin: 0 !important;
     height: 55px;
@@ -1651,9 +1655,13 @@ select {
 
 .modalformcustomfooter {
   display: flex;
-  padding: 20px;
+  padding: 20px 0;
   border-top: 1px solid #dee2e6;
   margin-top: 10px;
+}
+
+.modal-hidden {
+  display: none;
 }
 
 .just-cont-space-btw {
