@@ -41,7 +41,7 @@
                            id="floorplan_description"
                            >ABCDEF</textarea>
 
-                            <p style="margin:5px 0px">Floor plan</p>
+                            <p style="margin:5px 0px 5px 2px">Floor plan</p>
                             <input class="radio" type="radio" id="2bhk" name="floorplan" value="2bhk">2BHK
                             <input class="radio" type="radio" id="3bhk" name="floorplan" value="3bhk">3BHK
 
