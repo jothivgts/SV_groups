@@ -7,23 +7,23 @@ $( "#exploreform" ).validate({
     rules: {
       explore_yourname: {
         required: true,
-        nowhitespace : true,
+  
       },explore_emailaddress: {
         required: true,
-        nowhitespace : true,
+  
         email : true,
         required: true
       },
       explore_mobilenumber: {
         required: true,
-        nowhitespace : true,
+  
             number: true,
             minlength: 10,
             maxlength: 10
       },
       explore_description:{
         required: true,
-        nowhitespace : true,
+  
       }
     },
     messages: {
@@ -86,23 +86,23 @@ $( "#exploreform" ).validate({
     rules: {
       floorplan_yourname: {
         required: true,
-        nowhitespace : true,
+  
         minlength: 3,
       },floorplan_emailaddress: {
         required: true,
-        nowhitespace : true,
+  
         email : true,
       },
       floorplan_mobilenumber: {
         required: true,
-        nowhitespace : true,
+  
             number: true,
             minlength: 10,
             maxlength: 10
       },
       floorplan_description:{
         required: true,
-        nowhitespace : true,
+  
         minlength: 3,
       },
       floorplan: {
@@ -156,23 +156,23 @@ $( "#broucherform" ).submit(function(e) {
   rules: {
     broucherform_yourname: {
       required: true,
-      nowhitespace : true,
+
         minlength: 3,
     },broucherform_emailaddress: {
       required: true,
-      nowhitespace : true,
+
       email : true,
     },
     broucherform_mobilenumber: {
       required: true,
-      nowhitespace : true,
+
           number: true,
           minlength: 10,
           maxlength: 10
     },
     broucherform_description:{
       required: true,
-      nowhitespace : true,
+
         minlength: 3,
     }
   },
