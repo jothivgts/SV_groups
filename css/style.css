@@ -1339,7 +1339,7 @@ select {
 
 @media (max-width: 420px) {
   .mobileverifysetup {
-    width: 96%;
+    width: 96% !important;
   }
 
   .navbar {
@@ -1791,7 +1791,7 @@ select {
 }
 
 .mobileverifysetup {
-  width: 580px !important;
+  width: 580px;
   max-width: unset !important;
 }
 
